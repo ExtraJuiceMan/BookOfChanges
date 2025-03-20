@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>I Ching - Classic of Changes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <script src="/media/iching_wilhelm.js"></script>
+    <script src="/media/main.js"></script>
+    <link rel="stylesheet" href="/media/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/media/images/taijitu.svg" sizes="any" type="image/svg+xml">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="header">
+            <div class="header-hexagram">
+                <div id="hex-l"></div>
+            </div>
+            <div class="header-title">
+                <h1>The I Ching
+                    <small><br />Classic of Changes</small>
+                </h1>
+            </div>
+            <div class="header-hexagram">
+                <div id="hex-r"></div>
+            </div>
+        </div>
+        <h2>Consult the Oracle</h2>
+        <section class="hexagram-cast">
+            <div id="cast" class="hexagram-cast-col"></div>
+            <div class="hexagram-cast-col">
+                <p>◄ Present</p>
+                <p><a id="present-view" style="display:none;">[View]</a> Hexagram <span id="present-num"></span></p>
+                <p>► Future</p>
+                <p><a id="future-view" style="display:none;">[View]</a> Hexagram <span id="future-num"></span></p>
+                <button disabled autocomplete="false" id="reset" onclick="reset();">Reset</button>
+            </div>
+            <div id="cast-alt" class="hexagram-cast-col"></div>
+
+        </section>
+        <details open="true">
+            <summary>Cast a Hexagram (RNG)</summary>
+            <p>Casting a hexagram on this page uses the computer's RNG (random number generator) to build a hexagram.
+            </p>
+            <button id="cast-btn" autocomplete="false" onclick="cast();">Cast</button>
+        </details>
+        <details>
+            <summary>Hexagram from Bits (24 Bits)</summary>
+            <p>24 bits of randomness can be supplied from any source to build a hexagram. 4 bits are required for
+                each line. Bits must be supplied in binary notation.</p>
+            <p>Interesting sources of truly random bits include:</p>
+            <a href="https://qrng.anu.edu.au/random-block-binary/">ANU QRNG: Quantum Random Numbers</a>
+            <br />
+            <a href="https://www.random.org/bytes/">random.org: Random Numbers from Atmospheric Noise</a>
+            <br />
+            <br />
+            <input style="width: 50%" id="hex-bits" type="text" maxlength="24" minlength="24" pattern="[01]+"
+                placeholder="101010...">
+            <button id="build" autocomplete="false"
+                onclick="castFromBits(document.getElementById('hex-bits').value);">Build</button>
+        </details>
+        <details>
+            <summary>Hexagram Cast Log</summary>
+            <p>A log of the hexagram's lines will appear in this box when it is cast.</p>
+            <p id="cast-log"></p>
+        </details>
+        <details>
+            <summary>Formulating a Question</summary>
+            <p>The I Ching can be used for guidance in three contexts: as a psychological tool, as an oracle which
+                divines the future, or as a method to commune with spirits.
+                You are free to use the I Ching and this website in any fashion you please; however, I (website creator)
+                tend to view it as a psychological tool which creates interesting correspondences with the future by
+                means of synchronicity.
+                <br /><br />
+                Below is a guide on formulating a question from "The Original I Ching Oracle Or, The Book of Changes"
+                (2018, p.19) which assumes that the I Ching is being used as a psychological tool. In a psychological
+                context, one would use the I Ching to receive images that can be interpreted for guidance in a manner
+                similar to dream interpretation.
+                Of course, it is not strictly necessary that these guidelines be followed, but I would assume that
+                scholars who have translated the I Ching know better than I about how to ask it questions.
+                <hr>
+                <b>Formulating a Question to the Oracle</b>
+                <br />
+                1. Ask only questions that are emotionally significant for you. The emotional charge in your question is
+                the energy that
+                activates the archetypal images in the answer. Only then can they speak to you and cause a rearrangement
+                of your view of
+                the situation. A question asked out of simple curiosity rarely gets a meaningful answer: the psychic
+                energy required for
+                significantly processing the matter is simply not available.
+                <br /><br />
+                2. Divination is not meant to replace critical reflection and introspection. Interrogating the oracle is
+                useful only
+                after you have deeply examined the situation and yourself and out of this examination you have distilled
+                an appropriate
+                question.
+                <br /><br />
+                3. Avoid asking the Yijing [I Ching] what to do, and avoid asking questions that expect yes or no as an
+                answer (e.g., is it right
+                to do this? will this succeed?). The answer will consist of images, and it will say neither yes nor no:
+                it will be up to
+                you to decide for a yes or a no, based on the resonance that those images call up in you.
+                <br /><br />
+                4. Avoid alternatives (e.g., /should I do this or that?). If the question is formulated as an
+                alternative, it is
+                difficult to decide whether the images contained in your answer refer to “this” or to “that.” When you
+                are faced with an
+                alternative, make a tentative choice (maybe the choice that is closer to your heart or the one that
+                awakens more energy
+                in you) and “test” it with the Yijing (“what about doing this?”). The answer will usually indirectly
+                illuminate also the
+                other option. A typical formula we often used at Eranos is “give me an image of ...” (this situation,
+                this choice, my
+                attitude, etc.).
+                <br /><br />
+                5. Be as specific as possible. Do not be afraid to narrow your question down. The answer to a vast or
+                general question
+                is often difficult to interpret, because the images can be read in too many different ways. On the
+                contrary, starting
+                from a concrete and emotionally significant question, the answer of the oracle frequently expands to
+                include larger
+                issues in the consultant's life.
+            </p>
+        </details>
+        <section>
+            <div style="text-align: center;">
+                <h2>
+                    <span
+                        style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 4.4rem;">易經</span>
+                    <br />The <b>I Ching</b>
+                    <br /><small>or <b>Book of Changes</b></small>
+                    <br /><small>or <b>Classic of Changes</b></small>
+                    <br /><small>Translated by Richard Wilhelm (1923)<br />and Cary F. Banes (1950)</small>
+                </h2>
+            </div>
+
+            <details>
+                <summary>About This Translation</summary>
+                <figure style="float:right;"><img title="Attribution: Bundesarchiv, Bild 146-2006-0022 / CC-BY-SA 3.0"
+                        src="/media/images/richard_wilhelm.jpg" style="height:16rem;">
+                    <figcaption>Richard Wilhelm</figcaption>
+                </figure>
+                <p>This website hosts an English translation of the I Ching (a.k.a. Yijing, Book of Changes, Classic of
+                    Changes)
+                    by
+                    Richard Wilhelm and Cary F. Banes. Originally translated from Chinese to German by Richard
+                    Wilhelm
+                    in 1923, Wilhelm's translation was later translated into English by Cary F. Banes in 1950.
+                    As of 2025, Wilhelm's
+                    translation is over 100 years old. Thank you Richard Wilhelm for allowing the western world
+                    access to
+                    this ancient wisdom, and thank you Cary F. Banes for allowing the English-speaking world access
+                    to it as well.
+                    <br /><br />
+                    The machine-readable translation of I Ching by Wilhelm/Banes used for this website was sourced
+                    from <a href="https://github.com/adamblvck/iching-wilhelm-dataset">Adam Blvck</a>, who sourced a
+                    Markdown version from <a href="https://github.com/harrywang/iching-book">Harry Wang</a>, who
+                    sourced the original digitized text from a <a
+                        href="http://www2.unipr.it/~deyoung/I_Ching_Wilhelm_Translation.html">webpage</a> hosted by
+                    the University of Parma.
+                    <br /><br />
+                    If there are any issues with the translation, please let me know by
+                    opening an issue on this website's Github repository. There seem to be a lot of typographical errors
+                    at the moment.
+                </p>
+            </details>
+            <details>
+                <summary>About This Website</summary>
+                <figure style="float:right;"><img title="Dan"
+                        src="/media/images/dan.jpg" style="height:10rem;">
+                    <figcaption>Dan</figcaption>
+                </figure>
+                <p>This website was created on a whim by a programmer named <a
+                        href="https://github.com/ExtraJuiceMan">Dan</a>. I wanted both an aesthetically pleasing copy of
+                    the I Ching and an online script to cast I Ching hexagrams with. The hexagram casting script found
+                    on this website uses the <a href="https://en.wikipedia.org/wiki/I_Ching_divination#Four_coins">Four
+                        Coin Method</a>, which yields identical probabilities to the classic <a
+                        href="https://en.wikipedia.org/wiki/I_Ching_divination#Yarrow_stalks">Yarrow Stalk Method</a>.
+                    The hexagram random number generation uses the <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues">Crypto.getRandomValues()</a>
+                    API with a fallback to <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random">Math.random()</a>
+                    if Crypto is unavailable. The website's stylesheet was created using a heavily modified version of <a href="https://github.com/kevquirk/simple.css">simple.css</a>. No
+                    generative AI was used in the
+                    creation of this website. </p>
+                    <br/>
+                <p style="text-align: center;">
+                    <b>For a Version of I Ching</b>
+                    <br /><br />
+                    <i>
+                        The imminent is as immutable<br />
+                        As rigid yesterday. There is no matter<br />
+                        That rates more than a single, silent letter<br />
+                        In the eternal and inscrutable<br />
+                        Writing whose book in time. He who believes<br />
+                        He's left his home already has come back.<br />
+                        Life is a future and well-traveled track.<br />
+                        Nothing dismisses us. Nothing leaves.<br />
+                        Do not give up. The prison is bereft<br />
+                        Of light, its fabric is incessant iron,<br />
+                        But in some corner of your mean environs<br />
+                        You might discover a mistake, a cleft.<br />
+                        The road is fatal as an arrow's flight<br />
+                        But God is watching in the narrowest light.<br />
+                        <br />
+                    </i>
+                    - Jorge Luis Borges (translated by Eric McHenry)
+                </p>
+            </details>
+            <details>
+                <summary>Hexagram Lookup</summary>
+            </details>
+            <details>
+                <summary>I Ching - Index</summary>
+                <div id="iching-index" class="iching-index">
+                </div>
+            </details>
+        </section>
+        <div id="iching-entries">
+
+        </div>
+    </main>
+</body>
+
+</html>
