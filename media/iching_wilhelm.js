@@ -900,8 +900,8 @@ ICHING = {
                 "comments": "In friendships and close relationships an individual must make a careful choice. He surrounds himself either with good or with bad company; he cannot have both at once. If he throws himself away on unworthy friends he loses connection with people of intellectual power who could further him in the good."
             },
             "3": {
-                "text": "If one clings to the strong man,\nOne loses the little boy.",
-                "comments": "Through following one finds what one seeks.\nIt furthers one to remain persevering.\n\nWhen the right connection with distinguished people has been found, a certain loss naturally ensues. A man must part company with the inferior and superficial. But in his heart he will feel satisfied, because he seeks and needs for the development of his personality. The important thing is to remain firm. He must know what he wants and not be led astray by momentary inclinations."
+                "text": "If one clings to the strong man,\nOne loses the little boy.\nThrough following one finds what one seeks.\nIt furthers one to remain persevering.",
+                "comments": "When the right connection with distinguished people has been found, a certain loss naturally ensues. A man must part company with the inferior and superficial. But in his heart he will feel satisfied, because he seeks and needs for the development of his personality. The important thing is to remain firm. He must know what he wants and not be led astray by momentary inclinations."
             },
             "4": {
                 "text": "Following creates success.\nPerseverance brings misfortune.\nTo go one's way with sincerity brings clarity.\nHow could there be blame in this?",
