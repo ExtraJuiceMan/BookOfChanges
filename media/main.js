@@ -98,14 +98,11 @@ function expandEntryLines() {
     let hexNum = document.getElementById("present-num");
     let ichingEntry = document.getElementById("hexagram-" + hexNum.innerText);
     let linesDiv = ichingEntry.querySelector(".line-changes");
-    let hexagramLines = castHexagram.lines;
-
-    linesDiv.setAttribute("open", "");
-
     let linesDivChildren = linesDiv.querySelectorAll("details");
+    let hexagramLines = castHexagram.lines;
+    let changeFound = false;
 
-    for (let i = 0; i < linesDivChildren.length; i++)
-    {
+    for (let i = 0; i < linesDivChildren.length; i++) {
         let child = linesDivChildren[i];
         let line = hexagramLines[i];
 
@@ -114,6 +111,10 @@ function expandEntryLines() {
         } else {
             child.removeAttribute("open");
         }
+    }
+
+    if (changeFound) {
+        linesDiv.setAttribute("open", "");
     }
 }
 
