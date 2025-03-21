@@ -665,7 +665,7 @@ ICHING = {
             "symbolic": "THE CLINGING,",
             "alchemical": "FLAME"
         },
-        "wilhelm_symbolic": "The image of the upper trigram Ch'ien is heaven, and that of the lower, Li, is flame. It is the nature of fire to flame up to the heaven. This gives the idea of fellowship. IT is the second line that, by virtue of its central character, unites the five strong lines around it. This hexagram forms a complement to Shih, THE ARMY\n\n7. In the latter, danger is within and obedience without--the character of a warlike army, which, in order to hold together, needs one strong man among the many who are weak. Here, clarity is within and strength without--the character of a peaceful union of men, which, in order to hold together, needs one yielding nature among many firm persons.",
+        "wilhelm_symbolic": "The image of the upper trigram Ch'ien is heaven, and that of the lower, Li, is flame. It is the nature of fire to flame up to the heaven. This gives the idea of fellowship. IT is the second line that, by virtue of its central character, unites the five strong lines around it. This hexagram forms a complement to Shih, THE ARMY (7). In the latter, danger is within and obedience without--the character of a warlike army, which, in order to hold together, needs one strong man among the many who are weak. Here, clarity is within and strength without--the character of a peaceful union of men, which, in order to hold together, needs one yielding nature among many firm persons.",
         "wilhelm_judgment": {
             "text": "FELLOWSHIP WITH MEN in the open.\n\nSuccess.\nIt furthers one to cross the great water.\nThe perseverance of the superior man furthers.",
             "comments": "True fellowship among men must be based upon a concern that is universal. It is not the private interests of the individual that create lasting fellowship among men, but rather the goals of humanity. That is why it is said that fellowship with men in the open succeeds. If unity of this kind prevails, even difficult and dangerous tasks, such as crossing the great water, can be accomplished. But in order to bring about this sort of fellowship, a persevering and enlightened leader is needed--a man with clear, convincing, and inspiring aims and the strength to carry them out. (The inner trigram means clarity; the outer, strength.)"
@@ -721,7 +721,7 @@ ICHING = {
         },
         "wilhelm_symbolic": "The fire in heaven above shines far, and all things stand out in the light and become manifest. The weak fifth line occupies the place of honor and all the strong lines are in accord with it.All things come to the man who is modest and kind in a high position.",
         "wilhelm_judgment": {
-            "text": "POSSESSION IN GREAT MEASURE.\n\nSupreme success.",
+            "text": "POSSESSION IN GREAT MEASURE.\nSupreme success.",
             "comments": "The two trigrams indicate that strength and clarity unite. Possessions great measure is determined by fate and accords with the time. How is it possible that the weak line has power to hold the strong lines fast and to possess them? It is done by virtue of unselfish modesty. The time is favorable--a time of strength within, clarity and culture without. Power is expressing itself in graceful and controlled way. This brings supreme success and wealth."
         },
         "wilhelm_image": {
