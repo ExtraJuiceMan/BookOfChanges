@@ -2404,28 +2404,28 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "If you are sincere, but not to the end,",
-                "comments": "There will sometimes be confusion, sometimes gathering together.\nIf you call out,\n\nThen after one grasp of the hand you can laugh again.\nRegret not. Going is without blame.\n\nThe situation is this: People desire to gather around a leader to whom they look up. But they are in a large group, by which they allow themselves to be influenced, so that they waver in their decision. Thus they lack a firm center around which to gather. But if expression is given to this need, and if they call for help, one grasp of the hand from the leader is enough to turn away all distress. Therefore they must not allow themselves to be led astray. It is undoubtedly right that they should attach themselves to this leader."
+                "text": "If you are sincere, but not to the end,\nThere will sometimes be confusion, sometimes gathering together.\nIf you call out,\nThen after one grasp of the hand you can laugh again.\nRegret not. Going is without blame.",
+                "comments": "The situation is this: People desire to gather around a leader to whom they look up. But they are in a large group, by which they allow themselves to be influenced, so that they waver in their decision. Thus they lack a firm center around which to gather. But if expression is given to this need, and if they call for help, one grasp of the hand from the leader is enough to turn away all distress. Therefore they must not allow themselves to be led astray. It is undoubtedly right that they should attach themselves to this leader."
             },
             "2": {
                 "text": "Letting oneself be drawn\nBrings good fortune and remains blameless.\nIf one is sincere,\nIt furthers one to bring even a small offering.",
                 "comments": "In the time of GATHERING TOGETHER, we should make no arbitrary choice of the way. There are secret forces at work, leading together those who belong together. We must yield to this attraction; then we make no mistakes. Where inner relationships exist, no great preparations and formalities are necessary. People understand one another forthwith, just as the Divinity graciously accepts a small offering if it comes from the heart."
             },
             "3": {
-                "text": "Gathering together amid sighs.",
-                "comments": "Nothing that would further.\nGoing is without blame.\n\nSlight humiliation.\n\nOften a man feels an urge to unite with others, but the individuals around him have already formed themselves into a group, so that he remains isolated. The whole situation proves untenable. Then he ought to choose the way of progress, resolutely allying himself with a man who stands nearer to the center of the group, and can help him to gain admission to the closed circle. This is not a mistake, even though at first his position as an outsider is somewhat humiliating."
+                "text": "Gathering together amid sighs.\nNothing that would further.\nGoing is without blame.\nSlight humiliation.",
+                "comments": "Often a man feels an urge to unite with others, but the individuals around him have already formed themselves into a group, so that he remains isolated. The whole situation proves untenable. Then he ought to choose the way of progress, resolutely allying himself with a man who stands nearer to the center of the group, and can help him to gain admission to the closed circle. This is not a mistake, even though at first his position as an outsider is somewhat humiliating."
             },
             "4": {
                 "text": "Great good fortune. No blame.",
                 "comments": "This describes a man who gathers people around him in the name of his ruler. Since he is not striving for any special advantages for himself but is working unselfishly to bring about general unity, his work is crowned with success, and everything becomes as it should be."
             },
             "5": {
-                "text": "If in gathering together one has position,",
-                "comments": "This brings no blame.\nIf there are some who are not yet sincerely in the work,\n\nSublime and enduring perseverance is needed.\n\nThen remorse disappears.\n\nWhen people spontaneously gather around a man, it is only a good. It gives him a certain influence that can be altogether useful.. But of course there is also the possibility that many may gather around him not because of a feeling of confidence but merely because of his influential position. This is certainly to be regretted. The only means of dealing with such people is to gain their confidence through steadfastness an intensified, unswerving devotion to duty. In this way secret mistrust will gradually be overcome, and there will be no occasion for regret."
+                "text": "If in gathering together one has position,\nThis brings no blame.\nIf there are some who are not yet sincerely in the work,\nSublime and enduring perseverance is needed.\nThen remorse disappears.",
+                "comments": "When people spontaneously gather around a man, it is only a good. It gives him a certain influence that can be altogether useful.. But of course there is also the possibility that many may gather around him not because of a feeling of confidence but merely because of his influential position. This is certainly to be regretted. The only means of dealing with such people is to gain their confidence through steadfastness an intensified, unswerving devotion to duty. In this way secret mistrust will gradually be overcome, and there will be no occasion for regret."
             },
             "6": {
-                "text": "Lamenting and sighing, floods of tears.",
-                "comments": "No blame.\n\nIt may happen that an individual would like to ally himself with another, but his good intentions are misunderstood. Then he becomes sad and laments. But this is the right course. For it may cause the other person to come to his senses, so that the alliance that has been sought and so painfully missed is after all achieved."
+                "text": "Lamenting and sighing, floods of tears.\nNo blame.",
+                "comments": "It may happen that an individual would like to ally himself with another, but his good intentions are misunderstood. Then he becomes sad and laments. But this is the right course. For it may cause the other person to come to his senses, so that the alliance that has been sought and so painfully missed is after all achieved."
             }
         }
     },
