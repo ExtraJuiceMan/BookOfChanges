@@ -84,7 +84,7 @@ function updateHexagramNumbers() {
     document.getElementById("future-num").innerText = altNum;
 
     document.getElementById("present-view").style = "";
-    document.getElementById("present-view").href = "#hexagram-"+castNum;
+    document.getElementById("present-view").href = "#hexagram-" + castNum;
     document.getElementById("future-view").style = "";
     document.getElementById("future-view").href = "#hexagram-" + altNum;
 
@@ -451,25 +451,25 @@ function initializeHeaderHexagrams() {
 function templateIChingIndex() {
     let index = document.getElementById("iching-index");
 
+    let temp = `<div class="iching-index-entry">
+        <div class="iching-index-entry-hexagram">
+            <svg id="iching-index-hexagram-{{w.hex}}"xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="120" height="120" viewBox="0 0 120 120" style="width: 2rem; height: 2rem;">
+            </svg>
+        </div>
+        <div class="iching-index-entry-text">
+            <a href="#hexagram-{{w.hex}}">{{w.hex}}. {{w.english}}</a>
+        </div>
+    </div>`;
+
+    let template = Handlebars.compile(temp, { noEscape: true });
+
     for (let k in ICHING) {
         let entry = ICHING[k];
 
-        let indexEntry = document.createElement("div")
-        indexEntry.classList += "iching-index-entry";
+        let section = template({ w: entry });
+        index.innerHTML += section;
 
-        let indexHexagram = document.createElement("div");
-        indexHexagram.classList += "iching-index-entry-hexagram";
-        let indexText = document.createElement("div");
-        indexText.classList += "iching-index-entry-text";
-        
-        indexText.innerHTML = `<a href="#hexagram-${entry.hex}">${entry.hex}. ${entry.english}</a>`
-
-        indexEntry.appendChild(indexHexagram);
-        indexEntry.appendChild(indexText);
-
-        index.appendChild(indexEntry);
-
-        new Hexagram(SVG().addTo(indexHexagram).size(120, 120).viewbox(0, 0, 120, 120).css("width", "2rem").css("height", "2rem"), entry.binary.toString());
+        new Hexagram(SVG("#iching-index-hexagram-" + entry.hex).size(120, 120).viewbox(0, 0, 120, 120).css("width", "2rem").css("height", "2rem"), entry.binary.toString());
     }
 }
 
@@ -621,7 +621,7 @@ function templateIChing() {
         document.getElementById("iching-entries").innerHTML += section;
 
         let draw = SVG("#hexagram-svg-" + entry.binary).size(120, 120).viewbox(0, 0, 120, 120);
-        let h = new Hexagram(draw, entry.binary);
+        new Hexagram(draw, entry.binary);
     }
 }
 
