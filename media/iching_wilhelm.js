@@ -1918,16 +1918,16 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Darkening of the light during flight.\nHe lowers his wings.",
-                "comments": "The superior man does not eat for three days\nOn his wanderings.\nBut he has somewhere to go.\n\nThe host has occasion to gossip about him.\n\nWith grandiose resolve a man endeavors to soar above all obstacles, but thus encounters a hostile fate. He retreats and evades the issue. The time is difficult. Without rest, he must hurry along, with no permanent abiding place. If he does not want to make compromises within himself, but insists on remaining true to his principles, he suffers deprivation. Never the less he has a fixed goal to strive for even though the people with whom he lives do not understand him and speak ill of him."
+                "text": "Darkening of the light during flight.\nHe lowers his wings.\nThe superior man does not eat for three days\nOn his wanderings.\nBut he has somewhere to go.\nThe host has occasion to gossip about him.",
+                "comments": "With grandiose resolve a man endeavors to soar above all obstacles, but thus encounters a hostile fate. He retreats and evades the issue. The time is difficult. Without rest, he must hurry along, with no permanent abiding place. If he does not want to make compromises within himself, but insists on remaining true to his principles, he suffers deprivation. Never the less he has a fixed goal to strive for even though the people with whom he lives do not understand him and speak ill of him."
             },
             "2": {
                 "text": "Darkening of the light injures him in the left thigh.\nHe gives aid with the strength of a horse.\nGood fortune.",
                 "comments": "Here the Lord of Light is in a subordinate place and is wounded by the Lord of Darkness. But the injury is not fatal; it is only a hindrance. Rescue is still possible. The wounded man gives no thought to himself; he thinks only of saving the others who are also in danger. Therefore he tries with all his strength to save all that can be saved. There is good fortune in thus acting according to duty."
             },
             "3": {
-                "text": "Darkening of the light during the hunt in the south.",
-                "comments": "Their great leader is captured.\nOne must not expect perseverance too soon.\n\nIt seems as if chance were at work. While the strong, loyal man is striving eagerly and in good faith to create order, he meets the ringleader of the disorder, as if by accident, and seizes him. Thus victory is achieved. But in abolishing abuses one must not be too hasty. This would turn out badly because the abuses have been in existence so long."
+                "text": "Darkening of the light during the hunt in the south.\nTheir great leader is captured.\nOne must not expect perseverance too soon.",
+                "comments": "It seems as if chance were at work. While the strong, loyal man is striving eagerly and in good faith to create order, he meets the ringleader of the disorder, as if by accident, and seizes him. Thus victory is achieved. But in abolishing abuses one must not be too hasty. This would turn out badly because the abuses have been in existence so long."
             },
             "4": {
                 "text": "He penetrates the left side of the belly.\nOne gets at the very heart of the darkening of the light.",
@@ -1938,8 +1938,8 @@ ICHING = {
                 "comments": "Prince Chi lived at the court of the evil tyrant Chou Hsin, who, although not mentioned by name, furnished the historical example on which this whole situation is based. Prince Chi was a relative of the tyrant and could not withdraw from the court; therefore he concealed his true sentiments and feigned insanity. Although he was held a slave, he did not allow external misery to deflect him from his convictions. This provides a teaching for those who cannot leave their posts in times of darkness. In order to escape danger, they need invincible perseverance of spirit and redoubled caution in their dealings with the world."
             },
             "6": {
-                "text": "Not light but darkness.\nFirst he climbed up to heaven,",
-                "comments": "Then plunged into the depths of the earth.\n\nHere the climax of the darkening is reached. The dark power at first held so high a place that it could wound all who were on the side of good and of the light. But in the end it perishes of its own darkness, for evil must itself fall at the very moment when it has wholly overcome the good, and thus consumed the energy to which it owed its duration."
+                "text": "Not light but darkness.\nFirst he climbed up to heaven,\nThen plunged into the depths of the earth.",
+                "comments": "Here the climax of the darkening is reached. The dark power at first held so high a place that it could wound all who were on the side of good and of the light. But in the end it perishes of its own darkness, for evil must itself fall at the very moment when it has wholly overcome the good, and thus consumed the energy to which it owed its duration."
             }
         }
     },
