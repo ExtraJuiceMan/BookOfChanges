@@ -1552,16 +1552,16 @@ ICHING = {
                 "comments": "Here every step, forward or backward, leads into danger. Escape is out of the question. Therefore we must not be misled into action, as a result of which we should only bog down deeper in the danger; disagreeable as it may be to remain in such a situation, we must wait until a way out shows itself."
             },
             "4": {
-                "text": "A jug of wine, a bowl of rice with it;\nEarthen vessels",
-                "comments": "Simply handed in through the Window.\n\nThere is certainly no blame in this.\n\nIn times of danger ceremonious forms are dropped. What matters most is sincerity. Although as a rule it is customary for an official to present certain introductory gifts and recommendations before he is appointed, here everything is simplified to the utmost. The gifts are insignificant, there is no one to sponsor him, he introduces himself; yet all this need not be humiliating if only there is the honest intention of mutual help in danger. Still another idea is suggested. The window is the place through which light enters the room. If in difficult times we want to enlighten someone, we must begin with that which is in itself lucid and proceed quite simply from that point on."
+                "text": "A jug of wine, a bowl of rice with it;\nEarthen vessels\nSimply handed in through the Window.\nThere is certainly no blame in this.",
+                "comments": "In times of danger ceremonious forms are dropped. What matters most is sincerity. Although as a rule it is customary for an official to present certain introductory gifts and recommendations before he is appointed, here everything is simplified to the utmost. The gifts are insignificant, there is no one to sponsor him, he introduces himself; yet all this need not be humiliating if only there is the honest intention of mutual help in danger. Still another idea is suggested. The window is the place through which light enters the room. If in difficult times we want to enlighten someone, we must begin with that which is in itself lucid and proceed quite simply from that point on."
             },
             "5": {
-                "text": "The abyss is not filled to overflowing,\nIt is filled only to the rim.",
-                "comments": "No blame.\n\nDanger comes because one is too ambitious. In order to flow out of a ravine, water does not rise higher than the lowest point of the rim. So likewise a man when in danger has only to proceed along the line of least resistance; thus he reaches the goal. Great labors cannot be accomplished in such times; it is enough to get out of the danger."
+                "text": "The abyss is not filled to overflowing,\nIt is filled only to the rim.\nNo blame.",
+                "comments": "Danger comes because one is too ambitious. In order to flow out of a ravine, water does not rise higher than the lowest point of the rim. So likewise a man when in danger has only to proceed along the line of least resistance; thus he reaches the goal. Great labors cannot be accomplished in such times; it is enough to get out of the danger."
             },
             "6": {
-                "text": "Bound with cords and ropes,",
-                "comments": "Shut in between thorn-hedged prison walls:\nFor three years one does not find the way.\nMisfortune.\n\nA man who in the extremity of danger has lost the right way and is irremediably entangled in his sins has no prospect of escape. He is like a criminal who sits shackled behind thorn hedged prison walls."
+                "text": "Bound with cords and ropes,\nShut in between thorn-hedged prison walls:\nFor three years one does not find the way.\nMisfortune.",
+                "comments": "A man who in the extremity of danger has lost the right way and is irremediably entangled in his sins has no prospect of escape. He is like a criminal who sits shackled behind thorn hedged prison walls."
             }
         }
     },
