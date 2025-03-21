@@ -2728,8 +2728,8 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Shock comes-oh, oh!",
-                "comments": "Then follow laughing words-ha, ha!\nGood fortune.\n\nThe fear and trembling engendered by shock come to an individual at first in such a way that he sees himself placed at a disadvantage as against others. But this is only transitory. When the ordeal is over, he experiences relief, and thus the very terror he had to endure at the outset brings good fortune in the long run."
+                "text": "Shock comes-oh, oh!\nThen follow laughing words-ha, ha!\nGood fortune.",
+                "comments": "The fear and trembling engendered by shock come to an individual at first in such a way that he sees himself placed at a disadvantage as against others. But this is only transitory. When the ordeal is over, he experiences relief, and thus the very terror he had to endure at the outset brings good fortune in the long run."
             },
             "2": {
                 "text": "Shock comes bringing danger.\nA hundred thousand times\nYou lose your treasures\nAnd must climb the nine hills.\nDo not go in pursuit of them.\nAfter seven days you will get them back again.",
@@ -2748,8 +2748,8 @@ ICHING = {
                 "comments": "This is a case not of a single shock but of repeated shocks with no breathing space between. Nonetheless, the shock causes no loss, because one takes care to stay in the center of movement and in this way to be spared the fate of being helplessly tossed hither and thither."
             },
             "6": {
-                "text": "Shock brings ruin and terrified gazing around.\nGoing ahead brings misfortune.\nIf it has not yet touched one's own body\nBut has reached one's neighbor first,",
-                "comments": "There is no blame.\nOne's comrades have something to talk about.\n\nWhen inner shock is at its height, it robs a man of reflection and clarity of vision. In such a state of shock it is of course impossible to act with presence of mind. Then the right thing is to keep still until composure and clarity are restored. But this a man can do only when he himself is not yet infected by the agitation, although its disastrous effects are already visible in those around him. If he withdraws from the affair in time, he remains free of mistakes and injury. But his comrades, who no longer heed any warning, will in their excitement certainly be displeased with him. However, he must not take this into account."
+                "text": "Shock brings ruin and terrified gazing around.\nGoing ahead brings misfortune.\nIf it has not yet touched one's own body\nBut has reached one's neighbor first,\nThere is no blame.\nOne's comrades have something to talk about.",
+                "comments": "When inner shock is at its height, it robs a man of reflection and clarity of vision. In such a state of shock it is of course impossible to act with presence of mind. Then the right thing is to keep still until composure and clarity are restored. But this a man can do only when he himself is not yet infected by the agitation, although its disastrous effects are already visible in those around him. If he withdraws from the affair in time, he remains free of mistakes and injury. But his comrades, who no longer heed any warning, will in their excitement certainly be displeased with him. However, he must not take this into account."
             }
         }
     },
