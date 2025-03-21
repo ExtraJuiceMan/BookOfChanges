@@ -991,7 +991,7 @@ ICHING = {
         },
         "wilhelm_symbolic": "The Chinese word lin has a range of meanings that is not exhausted by any single word of another language. The ancient explanations in the Book of Changes give as its first meaning, \"becoming great.\" What becomes great are the two strong lines growing into the hexagram from below; the light-giving power expands with them. The meaning is then further extended to include the concept of approach, especially the approach of what is lower. Finally the meaning includes the attitude of condescension of a man in high position toward the people, and in general the setting to work on affairs. This hexagram is linked with the twelfth month (January-February), when after the winter solstice, the light power begins to ascend again.",
         "wilhelm_judgment": {
-            "text": "APPROACH has supreme success.\nPerseverance furthers.\nWhen the eighth month comes,\n\n. There will be misfortune.",
+            "text": "APPROACH has supreme success.\nPerseverance furthers.\nWhen the eighth month comes,\nThere will be misfortune.",
             "comments": "The hexagram as a whole points to a time of joyous, hopeful progress. Spring is approaching. Joy and forbearance bring high and low nearer together. Success is certain. But we must work with determination and perseverance to make full use of the propitiousness of the time. And on thing more: spring does not last forever. In the eighth month the aspects are reversed. Then only two strong, light lines are left; these do not advance but are in retreat (see next hexagram). We must take heed of this change in good time. If we meet evil before it becomes reality-before it has even begun to stir-we can master it."
         },
         "wilhelm_image": {
