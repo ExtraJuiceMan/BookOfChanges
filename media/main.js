@@ -618,10 +618,10 @@ function templateIChing() {
             entry.wilhelm_lines[k] = v;
         }
 
-        entry.wilhelm_judgment.text = entry.wilhelm_judgment.text.replace("\n\n", "\n").replace(/\n/g, "<br />");
+        entry.wilhelm_judgment.text = entry.wilhelm_judgment.text.replace(/\n\s*\n/g, "\n").replace(/\n/g, "<br />");
         entry.wilhelm_judgment.comments = entry.wilhelm_judgment.comments.replace(/\n/g, "<br />");
 
-        entry.wilhelm_image.text = entry.wilhelm_image.text.replace("\n\n", "\n").replace(/\n/g, "<br />");
+        entry.wilhelm_image.text = entry.wilhelm_image.text.replace(/\n\s*\n/g, "\n").replace(/\n/g, "<br />");
         entry.wilhelm_image.comments = entry.wilhelm_image.comments.replace(/\n/g, "<br />");
 
         entry.wilhelm_symbolic = entry.wilhelm_symbolic.replace(/\n/g, "<br />");
