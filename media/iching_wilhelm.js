@@ -1383,7 +1383,7 @@ ICHING = {
             },
             "2": {
                 "text": "The axletrees are taken from the wagon.",
-                "comments": "Here advance is checked just as in the third line of THE TAMING POWER OF THE SMALL\n\n9. However, in the later the restraining force is slight; thus a conflict arises between the propulsive and the restraining movement, as a result of which the spokes fall out of the wagon wheels, while here the restraining force is absolutely superior; hence no struggle takes place. One submits and removes the axletrees from the wagon -in other words, contents himself with waiting. In this way energy accumulates for a vigorous advance later on."
+                "comments": "Here advance is checked just as in the third line of THE TAMING POWER OF THE SMALL (9). However, in the later the restraining force is slight; thus a conflict arises between the propulsive and the restraining movement, as a result of which the spokes fall out of the wagon wheels, while here the restraining force is absolutely superior; hence no struggle takes place. One submits and removes the axletrees from the wagon -in other words, contents himself with waiting. In this way energy accumulates for a vigorous advance later on."
             },
             "3": {
                 "text": "A good horse that follows others.\nAwareness of danger,\nWith perseverance, furthers.\nPractice chariot driving and armed defense daily.\nIt furthers one to have somewhere to go.",
@@ -1398,8 +1398,8 @@ ICHING = {
                 "comments": "Here the restraining of the impetuous forward drive is achieved in an indirect way. A boar's tusk is in itself dangerous, but if the boar's nature is altered, the tusk is no longer a menace. Thus also where men are concerned, wild force should not be combated directly; instead, its roots should be eradicated."
             },
             "6": {
-                "text": "One attains the way of heaven.",
-                "comments": "Success.\n\nThe time of obstruction is past. The energy long dammed up by inhibition forces its way out and achieves great success. This refers to a man who is honored by the ruler and whose principles now prevail and shape the world."
+                "text": "One attains the way of heaven.\nSuccess.",
+                "comments": "The time of obstruction is past. The energy long dammed up by inhibition forces its way out and achieves great success. This refers to a man who is honored by the ruler and whose principles now prevail and shape the world."
             }
         }
     },
