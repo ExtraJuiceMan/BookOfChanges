@@ -1124,8 +1124,8 @@ ICHING = {
                 "comments": "There are great obstacles to be overcome, powerful opponents are to be punished. Though this is arduous, the effort succeeds. But it is necessary to be hard as metal and straight as an arrow to surmount the difficulties. If one knows these difficulties and remains persevering, he attains good fortune. The difficult task is achieved in the end."
             },
             "5": {
-                "text": "Bites on dried lean meat.\nReceives yellow gold.\nPerseveringly aware of danger.",
-                "comments": "No blame.\n\nThe case to be decided is indeed not easy but perfectly clear. Since we naturally incline to leniency, we must make every effort to be like yellow gold-that is, as true as gold and as impartial as yellow, the color of the middle [the mean]. It is only by remaining conscious of the dangers growing out of the responsibility we have assumed that we can avoid making mistakes."
+                "text": "Bites on dried lean meat.\nReceives yellow gold.\nPerseveringly aware of danger.\nNo blame.",
+                "comments": "The case to be decided is indeed not easy but perfectly clear. Since we naturally incline to leniency, we must make every effort to be like yellow gold-that is, as true as gold and as impartial as yellow, the color of the middle [the mean]. It is only by remaining conscious of the dangers growing out of the responsibility we have assumed that we can avoid making mistakes."
             },
             "6": {
                 "text": "His neck is fastened in the wooden cangue,\nSo that his ears disappear.\nMisfortune.",
