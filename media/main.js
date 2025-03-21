@@ -107,6 +107,7 @@ function expandEntryLines() {
         let line = hexagramLines[i];
 
         if (line === YinYang.OLD_YANG || line == YinYang.OLD_YIN) {
+            changeFound = true;
             child.setAttribute("open", "");
         } else {
             child.removeAttribute("open");
@@ -114,7 +115,14 @@ function expandEntryLines() {
     }
 
     if (changeFound) {
+        // Change found, expand Line Changes <detail>
         linesDiv.setAttribute("open", "");
+    } else {
+        // No change found, expand all Line Changes inside.
+        for (let i = 0; i < linesDivChildren.length; i++) {
+            let child = linesDivChildren[i];
+            child.setAttribute("open", "");
+        }
     }
 }
 
