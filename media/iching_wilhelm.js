@@ -1486,8 +1486,8 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "To spread white rushes underneath.",
-                "comments": "No blame.\n\nWhen a man wishes to undertake an enterprise in extraordinary times, he must be extraordinarily cautious, just as when setting a heavy thing down on the floor, one takes care to put rushes under it, so that nothing will break. This caution, though it may seem exaggerated, is not a mistake. Exceptional enterprises cannot succeed unless utmost caution is observed in their beginnings and in the laying of their foundations."
+                "text": "To spread white rushes underneath.\nNo blame.",
+                "comments": "When a man wishes to undertake an enterprise in extraordinary times, he must be extraordinarily cautious, just as when setting a heavy thing down on the floor, one takes care to put rushes under it, so that nothing will break. This caution, though it may seem exaggerated, is not a mistake. Exceptional enterprises cannot succeed unless utmost caution is observed in their beginnings and in the laying of their foundations."
             },
             "2": {
                 "text": "A dry poplar sprouts at the root.\nAn older man takes a young wife.\nEverything furthers.",
@@ -1502,8 +1502,8 @@ ICHING = {
                 "comments": "Through friendly relations with people of lower rank, a responsible man succeeds in becoming master of the situation. But if, instead of working for the rescue of the whole, he were to misuse his connections to obtain personal power and success, it would lead to humiliation."
             },
             "5": {
-                "text": "A withered poplar puts forth flowers.\nAn older woman takes a husband.",
-                "comments": "No blame. No praise.\n\nA withered poplar that flowers exhausts its energies thereby and only hastens its end. An older woman may marry once more, but no renewal takes place. Everything remains barren. Thus, though all the amenities are observed, the net result is only the anomaly of the situation. Applied to politics, the metaphor means that if in times of insecurity we give up alliance with those below us and keep up only the relationships we have with people of higher rank, an unstable situation is created."
+                "text": "A withered poplar puts forth flowers.\nAn older woman takes a husband.\nNo blame. No praise.",
+                "comments": "A withered poplar that flowers exhausts its energies thereby and only hastens its end. An older woman may marry once more, but no renewal takes place. Everything remains barren. Thus, though all the amenities are observed, the net result is only the anomaly of the situation. Applied to politics, the metaphor means that if in times of insecurity we give up alliance with those below us and keep up only the relationships we have with people of higher rank, an unstable situation is created."
             },
             "6": {
                 "text": "One must go through the water.\nIt goes over one's head.\nMisfortune. No blame.",
