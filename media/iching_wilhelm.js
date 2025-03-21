@@ -2462,8 +2462,8 @@ ICHING = {
                 "comments": "This situation at the beginning of ascent. Just as wood draws strength for its upward push from the root, which in itself is in the lowest place, so the power to rise comes from this low and obscure station. But there is a spiritual affinity with the rulers above, and this solidarity creates the confidence needed to accomplish something."
             },
             "2": {
-                "text": "If one is sincere,\nIt furthers one to bring even a small offering.",
-                "comments": "No blame.\n\nHere a strong man is presupposed. It is true that he does not fit in with his environment, inasmuch as he is too brusque and pays too little attention to form. But as he is upright in character, he meets with response, and his lack of outward form does no harm. Here uprightness is the outcome of sound qualities of character, whereas in the corresponding line of the preceding hexagram it is the result of innate humility."
+                "text": "If one is sincere,\nIt furthers one to bring even a small offering.\nNo blame.",
+                "comments": "Here a strong man is presupposed. It is true that he does not fit in with his environment, inasmuch as he is too brusque and pays too little attention to form. But as he is upright in character, he meets with response, and his lack of outward form does no harm. Here uprightness is the outcome of sound qualities of character, whereas in the corresponding line of the preceding hexagram it is the result of innate humility."
             },
             "3": {
                 "text": "One pushes upward into an empty city.",
@@ -2478,8 +2478,8 @@ ICHING = {
                 "comments": "When a man is advancing farther and farther, it is important for him not to become intoxicated by success. Precisely when he experiences great success it is necessary to remain sober and not to try to skip any stages; he must go on slowly, step by step, as though hesitant. Only such calm, steady progress, overleaping nothing, leads to the goal."
             },
             "6": {
-                "text": "Pushing upward in darkness.\nIt furthers one",
-                "comments": "To be unremittingly persevering.\n\nHe who pushes upward blindly deludes himself. He knows only advance, not retreat. But this means exhaustion. In such a case it is important to be constantly mindful that one must be conscientious and consistent and must remain so. Only thus does one become free of blind impulse, which is always harmful."
+                "text": "Pushing upward in darkness.\nIt furthers one\nTo be unremittingly persevering.",
+                "comments": "He who pushes upward blindly deludes himself. He knows only advance, not retreat. But this means exhaustion. In such a case it is important to be constantly mindful that one must be conscientious and consistent and must remain so. Only thus does one become free of blind impulse, which is always harmful."
             }
         }
     },
