@@ -1328,12 +1328,12 @@ ICHING = {
                 "comments": "The original impulses of the heart are always good, so that we may follow them confidently, assured of good fortune and achievement of our aims."
             },
             "2": {
-                "text": "If one does not count on the harvest while plowing,",
-                "comments": "Nor on the use of the ground while clearing it,\nIt furthers one to undertake something.\n\nWe should do every task for its own sake as time and place demand and not with an eye to the result. Then each task turns out well, and anything we undertake succeeds."
+                "text": "If one does not count on the harvest while plowing,\nNor on the use of the ground while clearing it,\nIt furthers one to undertake something.",
+                "comments": "We should do every task for its own sake as time and place demand and not with an eye to the result. Then each task turns out well, and anything we undertake succeeds."
             },
             "3": {
-                "text": "Undeserved misfortune.",
-                "comments": "The cow that was tethered by someone\nIs the wanderer's gain, the citizen's loss.\n\nSometimes undeserved misfortune befalls a man at the hands of another, as for instance when someone passes by and takes a tethered cow along with him. His gain is the owner's loss. In all transactions, no matter how innocent, we must accommodate ourselves to the demands of the time, otherwise unexpected misfortune overtakes us."
+                "text": "Undeserved misfortune.\nThe cow that was tethered by someone\nIs the wanderer's gain, the citizen's loss.",
+                "comments": "Sometimes undeserved misfortune befalls a man at the hands of another, as for instance when someone passes by and takes a tethered cow along with him. His gain is the owner's loss. In all transactions, no matter how innocent, we must accommodate ourselves to the demands of the time, otherwise unexpected misfortune overtakes us."
             },
             "4": {
                 "text": "He who can be persevering\nRemains without blame.",
@@ -1344,8 +1344,8 @@ ICHING = {
                 "comments": "An unexpected evil may come accidentally from without. If it does not originate in one's own nature or have a foothold there, one should not resort to external means to eradicate it, but should quietly let nature take its course. Then improvement will come of itself."
             },
             "6": {
-                "text": "Innocent action brings misfortune.",
-                "comments": "Nothing furthers.\n\nWhen, in a given situation, the time is not ripe for further progress, the best thing to do is to wait quietly, without ulterior designs. If one acts thoughtlessly and tries to push ahead in opposition to fate, success will not be achieved."
+                "text": "Innocent action brings misfortune.\nNothing furthers.",
+                "comments": "When, in a given situation, the time is not ripe for further progress, the best thing to do is to wait quietly, without ulterior designs. If one acts thoughtlessly and tries to push ahead in opposition to fate, success will not be achieved."
             }
         }
     },
