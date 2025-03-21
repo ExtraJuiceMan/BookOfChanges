@@ -1614,8 +1614,8 @@ ICHING = {
                 "comments": "Here the zenith of life has been reached. Were there no warning, one would at this point consume oneself like a flame. Instead, understanding the vanity of all things, one may put aside both hope and fear, and sigh and lament: if one is intent on retaining his clarity of mind, good fortune will come from this grief. For here we are dealing not with a passing mood, as in the nine in the third place, but with a real change of heart."
             },
             "6": {
-                "text": "The king used him to march forth and chastise.",
-                "comments": "Then it is best to kill the leaders\nAnd take captive the followers. No blame.\n\nIt is not the purpose of chastisement to impose punishment blindly but to create discipline. Evil must be cured at its roots. To eradicate evil in political life, it is best to kill the ringleaders and spare the followers. In educating oneself it is best to root out bad habits and tolerate those that are harmless. For asceticism that is too strict, like sentences of undue severity, fails in its purpose."
+                "text": "The king used him to march forth and chastise.\nThen it is best to kill the leaders\nAnd take captive the followers. No blame.",
+                "comments": "It is not the purpose of chastisement to impose punishment blindly but to create discipline. Evil must be cured at its roots. To eradicate evil in political life, it is best to kill the ringleaders and spare the followers. In educating oneself it is best to root out bad habits and tolerate those that are harmless. For asceticism that is too strict, like sentences of undue severity, fails in its purpose."
             }
         }
     },
