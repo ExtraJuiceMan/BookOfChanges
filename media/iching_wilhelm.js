@@ -2674,28 +2674,28 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "A ting with legs upturned.\nFurthers removal of stagnating stuff.\nOne takes a concubine for the sake of her son.",
-                "comments": "No blame.\n\nIf a ting is turned upside down before being used, no harm is done-on the contrary, this clears it of refuse. A concubine's position is lowly, but because she has a son she comes to be honored. These two metaphors express the idea that in a highly developed civilization, such as that indicated by this hexagram, every person of good will can in some way or other succeed. No matter how lowly he may be, provided he is ready to purify himself, he is accepted. He attains a station in which he can prove himself fruitful in accomplishment, and as a result he gains recognition."
+                "text": "A ting with legs upturned.\nFurthers removal of stagnating stuff.\nOne takes a concubine for the sake of her son.\nNo blame.",
+                "comments": "If a ting is turned upside down before being used, no harm is done-on the contrary, this clears it of refuse. A concubine's position is lowly, but because she has a son she comes to be honored. These two metaphors express the idea that in a highly developed civilization, such as that indicated by this hexagram, every person of good will can in some way or other succeed. No matter how lowly he may be, provided he is ready to purify himself, he is accepted. He attains a station in which he can prove himself fruitful in accomplishment, and as a result he gains recognition."
             },
             "2": {
                 "text": "There is food in the ting.\nMy comrades are envious,\nBut they cannot harm me.\nGood fortune.",
                 "comments": "In a period of advanced culture, it is of the greatest importance that one should achieve something significant. If a man concentrates on such real undertakings, he may indeed experience envy and disfavor, but that is not dangerous. The more he limits himself to his actual achievements, the less harm the envious inflict on him."
             },
             "3": {
-                "text": "The handle of the ting is altered.\nOne is impeded in his way of life.",
-                "comments": "The fat of the pheasant is not eaten.\nOnce rain falls, remorse is spent.\nGood fortune comes in the end.\n\nThe handle is the means for lifting up the ting. If the handle is altered, the ting cannot be lifted up and used, and, sad to say, the delicious food in it, such as pheasant fat, cannot be eaten by anyone. This describes a man who, in a highly evolved civilization, finds himself in a place where no one notices or recognizes him. This is a severe block to his effectiveness. All of his good qualities and gifts of mind thus needlessly go to waste. But if he will only see to it that he is possessed of something truly spiritual, the time is bound to come, sooner or later, when the difficulties will be resolved and all will go well. The fall of rain symbolizes here, as in other instances, release of tension."
+                "text": "The handle of the ting is altered.\nOne is impeded in his way of life.\nThe fat of the pheasant is not eaten.\nOnce rain falls, remorse is spent.\nGood fortune comes in the end.",
+                "comments": "The handle is the means for lifting up the ting. If the handle is altered, the ting cannot be lifted up and used, and, sad to say, the delicious food in it, such as pheasant fat, cannot be eaten by anyone. This describes a man who, in a highly evolved civilization, finds himself in a place where no one notices or recognizes him. This is a severe block to his effectiveness. All of his good qualities and gifts of mind thus needlessly go to waste. But if he will only see to it that he is possessed of something truly spiritual, the time is bound to come, sooner or later, when the difficulties will be resolved and all will go well. The fall of rain symbolizes here, as in other instances, release of tension."
             },
             "4": {
-                "text": "The legs of the ting are broken.",
-                "comments": "The prince's meal is spilled\nAnd his person is soiled.\nMisfortune.\n\nA man has a difficult and responsible task to which he is not adequate. Moreover, he does not devote himself to it with all his strength but goes about with inferior people; therefore the execution of the work fails. In this way he also incurs personal opprobrium. Confucius says about this line: \"Weak character coupled with honored place, meager knowledge with large plans, limited powers with heavy responsibility, will seldom escape disaster.\""
+                "text": "The legs of the ting are broken.\nThe prince's meal is spilled\nAnd his person is soiled.\nMisfortune.",
+                "comments": "A man has a difficult and responsible task to which he is not adequate. Moreover, he does not devote himself to it with all his strength but goes about with inferior people; therefore the execution of the work fails. In this way he also incurs personal opprobrium. Confucius says about this line: \"Weak character coupled with honored place, meager knowledge with large plans, limited powers with heavy responsibility, will seldom escape disaster.\""
             },
             "5": {
                 "text": "The ting has yellow handles, golden carrying rings.\nPerseverance furthers.",
                 "comments": "Here we have, in a ruling position, a man who is approachable and modest in nature. As a result of this attitude he succeeds in finding strong and able helpers who complement and aid him in his work. Having achieved this attitude, which requires constant self-abnegation, it is important for him to hold to it and not to let himself be led astray."
             },
             "6": {
-                "text": "The ting has rings of jade.\nGreat good fortune.",
-                "comments": "Nothing that would not act to further.\n\nIn the preceding line the carrying rings are described as golden, to denote their strength; here they are said to be of jade. Jade is notable for its combination of hardness with soft luster. This counsel, in relation to the man who is open to it, works greatly t his advantage. Here the counsel is described in relation to the sage who imparts it. In imparting it, he will be mild and pure, like precious jade. Thus the work finds favor in the eyes of the Deity, who dispenses great good fortune, and becomes pleasing to men, wherefore all goes well."
+                "text": "The ting has rings of jade.\nGreat good fortune.\nNothing that would not act to further.",
+                "comments": "In the preceding line the carrying rings are described as golden, to denote their strength; here they are said to be of jade. Jade is notable for its combination of hardness with soft luster. This counsel, in relation to the man who is open to it, works greatly t his advantage. Here the counsel is described in relation to the sage who imparts it. In imparting it, he will be mild and pure, like precious jade. Thus the work finds favor in the eyes of the Deity, who dispenses great good fortune, and becomes pleasing to men, wherefore all goes well."
             }
         }
     },
