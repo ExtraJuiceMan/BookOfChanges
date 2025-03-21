@@ -305,6 +305,15 @@ tr:nth-child(even) {
     padding: unset;
 }
 
+.iching-text-outer {
+    text-align: center;
+}
+
+.iching-text {
+    text-align: left;
+    display:inline-block;
+}
+
 .iching-entry-summary {
 
 }

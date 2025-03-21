@@ -508,7 +508,9 @@ function templateIChing() {
                 <summary class="iching-entry-summary">
                     Judgment
                 </summary>
-                <b>{{w.wilhelm_judgment.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_judgment.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_judgment.comments}}
             </details>
@@ -516,7 +518,9 @@ function templateIChing() {
                 <summary class="iching-entry-summary">
                     Image
                 </summary>
-                <b>{{w.wilhelm_image.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_image.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_image.comments}}
             </details>
@@ -528,7 +532,9 @@ function templateIChing() {
                 <summary class="iching-entry-summary">
                     Line 1
                 </summary>
-                <b>{{w.wilhelm_lines.1.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.1.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.1.comments}}
             </details>
@@ -536,7 +542,9 @@ function templateIChing() {
                 <summary class="iching-entry-summary">
                     Line 2
                 </summary>
-                <b>{{w.wilhelm_lines.2.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.2.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.2.comments}}
             </details>
@@ -544,7 +552,9 @@ function templateIChing() {
                 <summary class="iching-entry-summary">
                     Line 3
                 </summary>
-                <b>{{w.wilhelm_lines.3.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.3.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.3.comments}}
             </details>
@@ -552,7 +562,9 @@ function templateIChing() {
             <summary class="iching-entry-summary">
                     Line 4
                 </summary>
-                <b>{{w.wilhelm_lines.4.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.4.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.4.comments}}
             </details>
@@ -560,7 +572,9 @@ function templateIChing() {
             <summary class="iching-entry-summary">
                     Line 5
                 </summary>
-                <b>{{w.wilhelm_lines.5.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.5.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.5.comments}}
             </details>
@@ -568,7 +582,9 @@ function templateIChing() {
             <summary class="iching-entry-summary">
                     Line 6
                 </summary>
-                <b>{{w.wilhelm_lines.6.text}}</b>
+                <div class="iching-text-outer">
+                    <b class="iching-text">{{w.wilhelm_lines.6.text}}</b>
+                </div>
                 <br/><br/>
                 {{w.wilhelm_lines.6.comments}}
             </details>
