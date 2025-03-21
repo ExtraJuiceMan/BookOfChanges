@@ -2939,8 +2939,8 @@ ICHING = {
             "comments": "It is not given to every mortal to bring about a time of outstanding greatness and abundance. Only a born ruler of men is able to do it, because his will is directed to what is great. Such a time of abundance is usually brief. Therefore a sage might well feel sad in view of the decline that must follow. But such sadness foes not befit him. Only a man who is inwardly free of sorrow and care can lead in a time of abundance. He must be like the sun at midday, illuminating and gladdening everything under heaven."
         },
         "wilhelm_image": {
-            "text": "Both thunder and lightning come:\n\nThe image of ABUNDANCE.\n\nThus the superior man decides lawsuits\nAnd carries out punishments.\n\nThis hexagram has a certain connection with Shih Ho, BITING THROUGH",
-            "comments": "21, in which thunder and lightning similarly appear together, but in the reverse order. In BITING THROUGH, laws are laid down; here they are applied and enforced. Clarity [Li] within makes it possible to investigate the facts exactly, and shock [Chên] without ensures a strict and precise carrying out of punishments."
+            "text": "Both thunder and lightning come:\n\nThe image of ABUNDANCE.\n\nThus the superior man decides lawsuits\nAnd carries out punishments.",
+            "comments": "This hexagram has a certain connection with Shih Ho, BITING THROUGH (21), in which thunder and lightning similarly appear together, but in the reverse order. In BITING THROUGH, laws are laid down; here they are applied and enforced. Clarity [Li] within makes it possible to investigate the facts exactly, and shock [Chên] without ensures a strict and precise carrying out of punishments."
         },
         "wilhelm_lines": {
             "1": {
