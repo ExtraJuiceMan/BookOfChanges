@@ -2242,24 +2242,24 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "It furthers one to accomplish great deeds.",
-                "comments": "Supreme good fortune. No blame.\n\nIf great help comes to a man from on high, this increased strength must be used to achieve something great for which he might otherwise never have found energy, or readiness to take responsibility. Great good fortune is produced by selflessness, and in bringing about great good fortune, he remains free of reproach."
+                "text": "It furthers one to accomplish great deeds.\nSupreme good fortune. No blame.",
+                "comments": "If great help comes to a man from on high, this increased strength must be used to achieve something great for which he might otherwise never have found energy, or readiness to take responsibility. Great good fortune is produced by selflessness, and in bringing about great good fortune, he remains free of reproach."
             },
             "2": {
-                "text": "Someone does indeed increase him;",
-                "comments": "Ten pairs of tortoises cannot oppose it.\nConstant perseverance brings good fortune.\n\nThe king presents him before God.\nGood fortune.\n\nA man brings about real increase by producing in himself the conditions for it, that it, through receptivity to and love of the good. Thus the thing for which he strives comes of itself, with the inevitability of natural law. Where increase is thus in harmony with the highest laws of the universe, it cannot be prevented by any constellation of accidents. But everything depends on his not letting unexpected good fortune make him heedless; he must make it his own through inner strength an steadfastness. Then he acquires meaning before God and man, and can accomplish something for the good of the world."
+                "text": "Someone does indeed increase him;\nTen pairs of tortoises cannot oppose it.\nConstant perseverance brings good fortune.\nThe king presents him before God.\nGood fortune.",
+                "comments": "A man brings about real increase by producing in himself the conditions for it, that it, through receptivity to and love of the good. Thus the thing for which he strives comes of itself, with the inevitability of natural law. Where increase is thus in harmony with the highest laws of the universe, it cannot be prevented by any constellation of accidents. But everything depends on his not letting unexpected good fortune make him heedless; he must make it his own through inner strength an steadfastness. Then he acquires meaning before God and man, and can accomplish something for the good of the world."
             },
             "3": {
-                "text": "One is enriched through unfortunate events.",
-                "comments": "No blame, if you are sincere\nAnd walk in the middle,\nAnd report with a seal to the prince.\n\nA time of blessing and enrichment has such powerful effects that even events ordinarily unfortunate must turn out to the advantage of those affected by them. These persons become free of error, and by acting in harmony with truth they gain such inner authority that they exert influence as if sanctioned by the letter and seal."
+                "text": "One is enriched through unfortunate events.\nNo blame, if you are sincere\nAnd walk in the middle,\nAnd report with a seal to the prince.",
+                "comments": "A time of blessing and enrichment has such powerful effects that even events ordinarily unfortunate must turn out to the advantage of those affected by them. These persons become free of error, and by acting in harmony with truth they gain such inner authority that they exert influence as if sanctioned by the letter and seal."
             },
             "4": {
                 "text": "If you walk in the middle\nAnd report the prince,\nHe will follow.\nIt furthers one to be used\nIn the removal of the capital.",
                 "comments": "It is important that there should be men who mediate between leaders and followers. These should be disinterested people, especially in times of increase, since the benefit is to spread from the leader to the people. Nothing of this benefit should be held back in a selfish way; it should really reach those for whom it is intended. This sort of intermediary, who also exercises a good influence on the leader, is especially important in times when it is a matter of great undertakings, decisive for the future and requiring the inner assent of all concerned."
             },
             "5": {
-                "text": "If in truth you have a kind heart, ask not.",
-                "comments": "Supreme good fortune.\n\nTruly, kindness will be recognized as your virtue.\n\nTrue kindness does not count upon nor ask about merit and gratitude but acts from inner necessity. And such a truly kind heart finds itself rewarded in being recognized, and thus the beneficent influence will spread unhindered."
+                "text": "If in truth you have a kind heart, ask not.\n Supreme good fortune.",
+                "comments": "Truly, kindness will be recognized as your virtue.\n\nTrue kindness does not count upon nor ask about merit and gratitude but acts from inner necessity. And such a truly kind heart finds itself rewarded in being recognized, and thus the beneficent influence will spread unhindered."
             },
             "6": {
                 "text": "He brings increase to no one.\nIndeed, someone even strikes him.\nHe does not keep his heart constantly steady.\nMisfortune.",
