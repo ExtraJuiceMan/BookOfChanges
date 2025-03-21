@@ -3172,8 +3172,8 @@ ICHING = {
                 "comments": "Under certain circumstances, a man's work may become so difficult that he can no longer think of himself. He must set aside all personal desires and disperse whatever the self gathers about it to serve as a barrier against others. Only on the basis of great renunciation can he obtain the strength for great achievements. By setting his goal in a great task outside himself, he can attain this standpoint."
             },
             "4": {
-                "text": "He dissolves his bond with his group.",
-                "comments": "Supreme good fortune.\nDispersion leads in turn to accumulation.\n\nThis is something that ordinary men do not think of.\n\nWhen we are working at a task that affects the general welfare, we must leave all private friendships out of account. Only by rising above party interests can we achieve something decisive. He who has the courage thus to forego what is near wins what is afar. But in order to comprehend this standpoint, one must have a wide view of the interrelationships of life, such as only unusual men attain."
+                "text": "He dissolves his bond with his group. Supreme good fortune.\nDispersion leads in turn to accumulation.\nThis is something that ordinary men do not think of.",
+                "comments": "When we are working at a task that affects the general welfare, we must leave all private friendships out of account. Only by rising above party interests can we achieve something decisive. He who has the courage thus to forego what is near wins what is afar. But in order to comprehend this standpoint, one must have a wide view of the interrelationships of life, such as only unusual men attain."
             },
             "5": {
                 "text": "His loud cries are as dissolving as sweat.\nDissolution! A king abides without blame.",
