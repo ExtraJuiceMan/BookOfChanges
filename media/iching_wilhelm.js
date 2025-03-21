@@ -1810,28 +1810,28 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Power in the toes.\nContinuing brings misfortune.",
-                "comments": "This is certainly true.\n\nThe toes are in the lowest place and are ready to advance. So likewise great power in lowly station is inclined to effect advance by force. This, if carried further, would certainly lead to misfortune, and therefore by way of advice a warning is added."
+                "text": "Power in the toes.\nContinuing brings misfortune.\nThis is certainly true.",
+                "comments": "The toes are in the lowest place and are ready to advance. So likewise great power in lowly station is inclined to effect advance by force. This, if carried further, would certainly lead to misfortune, and therefore by way of advice a warning is added."
             },
             "2": {
                 "text": "Perseverance brings good fortune.",
                 "comments": "The premise here is that the gates to success are beginning to open. Resistance gives way and we forge ahead. This is the point at which, only too easily, we become the prey of exuberant self-confidence. This is why the oracle says that perseverance (i.e., perseverance in inner equilibrium, without excessive use of power) brings good fortune."
             },
             "3": {
-                "text": "The inferior man works through power.",
-                "comments": "The superior man does not act thus.\n\nTo continue is dangerous.\nA goat butts against a hedge\nAnd gets its horns entangled.\n\nMaking a boast of power leads to entanglements, just as a goat entangles its horns when it butts against a hedge. Whereas an inferior man revels in power when he comes into possession of it, the superior man never makes this mistake. He is conscious at all times of the danger of pushing ahead regardless of circumstances, and therefore renounces in good time the empty display of force."
+                "text": "The inferior man works through power.\nThe superior man does not act thus.\nTo continue is dangerous.\nA goat butts against a hedge\nAnd gets its horns entangled.",
+                "comments": "Making a boast of power leads to entanglements, just as a goat entangles its horns when it butts against a hedge. Whereas an inferior man revels in power when he comes into possession of it, the superior man never makes this mistake. He is conscious at all times of the danger of pushing ahead regardless of circumstances, and therefore renounces in good time the empty display of force."
             },
             "4": {
-                "text": "Perseverance brings good fortune.\nRemorse disappears.",
-                "comments": "The hedge opens; there is no entanglement.\nPower depends upon the axle of a big cart.\n\nIf a man goes on quietly and perseveringly working at the removal of resistances, success comes in the end. The obstructions give way and all occasion for remorse arising from excessive use of power disappears.\n\nSuch a man's power does not show externally, yet it can move heavy loads, like a big cart whose real strength lies in its axle. The less that power is applied outwardly, the greater its effect."
+                "text": "Perseverance brings good fortune.\nRemorse disappears.\nThe hedge opens; there is no entanglement.\nPower depends upon the axle of a big cart.",
+                "comments": "If a man goes on quietly and perseveringly working at the removal of resistances, success comes in the end. The obstructions give way and all occasion for remorse arising from excessive use of power disappears.\n\nSuch a man's power does not show externally, yet it can move heavy loads, like a big cart whose real strength lies in its axle. The less that power is applied outwardly, the greater its effect."
             },
             "5": {
-                "text": "Loses the goat with ease.",
-                "comments": "No remorse.\n\nThe goat is noted for hardness outwardly and weakness within. Now the situation is such that everything is easy; there is no more resistance. One can give up a belligerent, stubborn way of acting and will not have to regret it."
+                "text": "Loses the goat with ease.\nNo remorse.",
+                "comments": "The goat is noted for hardness outwardly and weakness within. Now the situation is such that everything is easy; there is no more resistance. One can give up a belligerent, stubborn way of acting and will not have to regret it."
             },
             "6": {
-                "text": "A goat butts against a hedge.\nIt cannot go backward, it cannot go forward.",
-                "comments": "Nothing serves to further.\nIf one notes the difficulty, this brings good fortune.\n\nIf we venture too far we come to a deadlock, unable either to advance or to retreat and whatever we do merely serves to complicate thing further. Such obstinacy leads to insuperable difficulties. But if, realizing the situation, we compose ourselves and decide not to continue, everything will right itself in time."
+                "text": "A goat butts against a hedge.\nIt cannot go backward, it cannot go forward.\nNothing serves to further.\nIf one notes the difficulty, this brings good fortune.",
+                "comments": "If we venture too far we come to a deadlock, unable either to advance or to retreat and whatever we do merely serves to complicate thing further. Such obstinacy leads to insuperable difficulties. But if, realizing the situation, we compose ourselves and decide not to continue, everything will right itself in time."
             }
         }
     },
