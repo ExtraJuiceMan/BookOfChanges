@@ -2989,8 +2989,8 @@ ICHING = {
         },
         "wilhelm_symbolic": "The mountain, Kên, stands still; above it fire, Li, flames up and does not tarry. Therefore the two trigrams do not stay together. Strange lands and separation are the wanderer's lot.",
         "wilhelm_judgment": {
-            "text": "The Wanderer. Success through smallness.\nPerseverance brings good fortune to the wanderer.\n\nWHEN A man is a wanderer and stranger, he should not be gruff nor overbearing. He has no large circle of acquaintances, therefore he should not give himself airs. He must be cautious and reserved; in this way he protects himself from evil. If he is obliging toward others, he wins success.",
-            "comments": "A wanderer has no fixed abode; his home is the road. Therefore he must take care to remain upright and steadfast, so that he sojourns only in the proper places, associating only with good people. Then he has good fortune and can go his way unmolested."
+            "text": "The Wanderer. Success through smallness.\nPerseverance brings good fortune to the wanderer.",
+            "comments": "WHEN A man is a wanderer and stranger, he should not be gruff nor overbearing. He has no large circle of acquaintances, therefore he should not give himself airs. He must be cautious and reserved; in this way he protects himself from evil. If he is obliging toward others, he wins success. A wanderer has no fixed abode; his home is the road. Therefore he must take care to remain upright and steadfast, so that he sojourns only in the proper places, associating only with good people. Then he has good fortune and can go his way unmolested."
         },
         "wilhelm_image": {
             "text": "Fire on the mountain:\n\nThe image of THE WANDERER.\n\nThus the superior man\nIs clear-minded and cautious\nIn imposing penalties,\nAnd protracts no lawsuits.",
