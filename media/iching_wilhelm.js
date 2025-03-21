@@ -1760,12 +1760,12 @@ ICHING = {
                 "comments": "Since the hexagram is the picture of something that is retreating, the lowest line represents the tail and the top line the head. In a retreat it is advantageous to be at the front. Here one is at the back, in immediate contact with the pursuing enemy. This is dangerous, and under such circumstances it is not advisable to undertake anything. Keeping still is the easiest way of escaping from the threatening danger."
             },
             "2": {
-                "text": "he holds him fast with yellow oxhide.",
-                "comments": "No one can tear him loose.\n\nYellow is the color of the middle. It indicates that which is correct and in line with duty. Oxhide is strong and not to be torn. While the superior men retreat and the inferior press after them, the inferior man represented here holds on so firmly and tightly to the superior man that the latter cannot shake him off. And because he is in quest of what is right an so strong in purpose, he reaches his goal. Thus the line confirms what is said in the Judgment: \"In what is small\" --here equivalent to \"in the inferior man\" -- \"perseverance furthers.\""
+                "text": "he holds him fast with yellow oxhide.\nNo one can tear him loose.",
+                "comments": "Yellow is the color of the middle. It indicates that which is correct and in line with duty. Oxhide is strong and not to be torn. While the superior men retreat and the inferior press after them, the inferior man represented here holds on so firmly and tightly to the superior man that the latter cannot shake him off. And because he is in quest of what is right an so strong in purpose, he reaches his goal. Thus the line confirms what is said in the Judgment: \"In what is small\" --here equivalent to \"in the inferior man\" -- \"perseverance furthers.\""
             },
             "3": {
-                "text": "A halted retreat\nIs nerve-wracking and dangerous.",
-                "comments": "To retain people as men- and maidservants\nBrings good fortune.\n\nWhen it is time to retreat it is both unpleasant and dangerous to be held back, because then one no longer has freedom of action. In such a case the only expedient is to take into one's service, so to speak, those who refuse to let one go, so that one may at least keep one's initiative and not fall helplessly under their domination. But even with this expedient the situation is far from satisfactory--for what can one hope to accomplish with such servants?"
+                "text": "A halted retreat\nIs nerve-wracking and dangerous.\nTo retain people as men- and maidservants\nBrings good fortune.",
+                "comments": "When it is time to retreat it is both unpleasant and dangerous to be held back, because then one no longer has freedom of action. In such a case the only expedient is to take into one's service, so to speak, those who refuse to let one go, so that one may at least keep one's initiative and not fall helplessly under their domination. But even with this expedient the situation is far from satisfactory--for what can one hope to accomplish with such servants?"
             },
             "4": {
                 "text": "Voluntary retreat brings good fortune to the superior man\nAnd downfall to the inferior man.",
