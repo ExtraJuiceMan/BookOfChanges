@@ -1702,8 +1702,8 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Seeking duration too hastily brings misfortune persistently.",
-                "comments": "Nothing that would further.\n\nWhatever endures can be created only gradually by long-continued work and careful reflection. In the same sense Lao-tse says: \"If we wish to compress something, we must first let it fully expand.\" He who demands too much at once is acting precipitately, and because he attempts too much, he ends by succeeding in nothing."
+                "text": "Seeking duration too hastily brings misfortune persistently.\nNothing that would further.",
+                "comments": "Whatever endures can be created only gradually by long-continued work and careful reflection. In the same sense Lao-tse says: \"If we wish to compress something, we must first let it fully expand.\" He who demands too much at once is acting precipitately, and because he attempts too much, he ends by succeeding in nothing."
             },
             "2": {
                 "text": "Remorse disappears.",
@@ -1718,8 +1718,8 @@ ICHING = {
                 "comments": "If we are in pursuit of game and want to get a shot at a quarry, we must set about it in the right way. A man who persists in stalking game in a place where there is none may wait forever without finding any. Persistence in search is not enough. What is not sought in the right way is not found."
             },
             "5": {
-                "text": "Giving duration to one's character through perseverance.",
-                "comments": "This is good fortune for a woman, misfortune for a man.\n\nA woman should follow a man her whole life long, but a man should at all times hold to what is his duty at the given moment. Should he persistently seek to conform to the woman, it would be a mistake for him. Accordingly it is altogether right for a woman to hold conservatively to tradition, but a man must always be flexible and adaptable and allow himself to be guided solely by what his duty requires of him at the moment."
+                "text": "Giving duration to one's character through perseverance.\nThis is good fortune for a woman, misfortune for a man.",
+                "comments": "A woman should follow a man her whole life long, but a man should at all times hold to what is his duty at the given moment. Should he persistently seek to conform to the woman, it would be a mistake for him. Accordingly it is altogether right for a woman to hold conservatively to tradition, but a man must always be flexible and adaptable and allow himself to be guided solely by what his duty requires of him at the moment."
             },
             "6": {
                 "text": "Restlessness as an enduring condition brings misfortune.",
