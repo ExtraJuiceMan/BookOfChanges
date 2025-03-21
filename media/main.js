@@ -573,7 +573,8 @@ function templateIChing() {
                 {{w.wilhelm_lines.6.comments}}
             </details>
             </details>
-            <a target="_blank" href="https://jamesdekorne.com/GBCh/hex{{w.hex}}.htm">Hexagram {{w.hex}}, The Gnostic Book of Changes</a>
+            <a target="_blank" href="https://jamesdekorne.com/GBCh/hex{{w.hex}}.htm">The Gnostic Book of Changes: Hexagram {{w.hex}}</a>
+            </br>
             <a href="#">Jump to Top</a>
         </section>`;
 
