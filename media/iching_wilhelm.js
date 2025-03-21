@@ -2358,16 +2358,16 @@ ICHING = {
                 "comments": "The inferior element is not overcome by violence but is kept under gentle control. Then nothing evil is to be feared. But care must be taken not to let it come in contact with those further away, because once free it would unfold its evil aspects unchecked."
             },
             "3": {
-                "text": "And walking comes hard.\nIf one is mindful of the danger,",
-                "comments": "No great mistake is made.\n\nThere is a temptation to fall in with the evil element offering itself-a very dangerous situation. Fortunately circumstances prevent this; one would like to do it, but cannot. This leads to painful indecision in behavior. But if we gain clear insight into the danger of the situation, we shall at least avoid more serious mistakes."
+                "text": "There is no skin on his thighs,\nAnd walking comes hard.\nIf one is mindful of the danger,\nNo great mistake is made.",
+                "comments": "There is a temptation to fall in with the evil element offering itself-a very dangerous situation. Fortunately circumstances prevent this; one would like to do it, but cannot. This leads to painful indecision in behavior. But if we gain clear insight into the danger of the situation, we shall at least avoid more serious mistakes."
             },
             "4": {
-                "text": "No fish in the tank.",
-                "comments": "This leads to misfortune.\n\nInsignificant people must be tolerated in order to keep them well disposed. Then we can make use of them if we should need them. If we become alienated from them and do not meet them halfway, they turn their backs on us and are not at our disposal when we need them. But this is our own fault."
+                "text": "No fish in the tank.\nThis leads to misfortune.",
+                "comments": "Insignificant people must be tolerated in order to keep them well disposed. Then we can make use of them if we should need them. If we become alienated from them and do not meet them halfway, they turn their backs on us and are not at our disposal when we need them. But this is our own fault."
             },
             "5": {
-                "text": "A melon covered with willow leaves.\nHidden lines.",
-                "comments": "Then it drops down to one from heave.\n\nThe melon, like the fish, is a symbol of the principle of darkness. It is sweet but spoils easily and for this reason is protected with a cover of willow leaves. This is a situation in which a strong, superior, well-poised man tolerates and protects the inferiors in his charge. He has the firm lines of order an beauty within himself but he does not lay stress upon them. He does not bother his subordinates with outward show or tiresome admonitions but leaves them quite free, putting his trust in the transforming power of a strong and upright personality. And behold! Fate is favorable. His inferiors respond to his influence and fall to his disposition like ripe fruit."
+                "text": "A melon covered with willow leaves.\nHidden lines.\nThen it drops down to one from heave.",
+                "comments": "The melon, like the fish, is a symbol of the principle of darkness. It is sweet but spoils easily and for this reason is protected with a cover of willow leaves. This is a situation in which a strong, superior, well-poised man tolerates and protects the inferiors in his charge. He has the firm lines of order an beauty within himself but he does not lay stress upon them. He does not bother his subordinates with outward show or tiresome admonitions but leaves them quite free, putting his trust in the transforming power of a strong and upright personality. And behold! Fate is favorable. His inferiors respond to his influence and fall to his disposition like ripe fruit."
             },
             "6": {
                 "text": "He comes to meet with his horns.\nHumiliation. No blame.",
