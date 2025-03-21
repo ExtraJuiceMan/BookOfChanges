@@ -94,12 +94,27 @@ function updateHexagramNumbers() {
     document.getElementById("cast-btn").disabled = true;
 }
 
-function loadReset() {
-    ocument.getElementById("cast-btn").disabled = false;
-    document.getElementById("build").disabled = false;
-    document.getElementById("reset").disabled = true;
-    document.getElementById("cast-log").innerText = "";
-    updateHexagramNumbers();
+function expandEntryLines() {
+    let hexNum = document.getElementById("present-num");
+    let ichingEntry = document.getElementById("hexagram-" + hexNum.innerText);
+    let linesDiv = ichingEntry.querySelector(".line-changes");
+    let hexagramLines = castHexagram.lines;
+
+    linesDiv.setAttribute("open", "");
+
+    let linesDivChildren = linesDiv.querySelectorAll("details");
+
+    for (let i = 0; i < linesDivChildren.length; i++)
+    {
+        let child = linesDivChildren[i];
+        let line = hexagramLines[i];
+
+        if (line === YinYang.OLD_YANG || line == YinYang.OLD_YIN) {
+            child.setAttribute("open", "");
+        } else {
+            child.removeAttribute("open");
+        }
+    }
 }
 
 function reset() {
@@ -524,7 +539,7 @@ function templateIChing() {
                 <br/>
                 {{w.wilhelm_image.comments}}
             </details>
-            <details class="iching-entry-details" >
+            <details class="iching-entry-details line-changes">
                 <summary class="iching-entry-summary">
                     Line Changes
                 </summary>
