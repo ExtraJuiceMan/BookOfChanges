@@ -1864,12 +1864,12 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Progressing, but turned back.\nPerseverance brings good fortune.\nIf one meets with no confidence, one should remain calm.",
-                "comments": "No mistake.\n\nAt a time when all elements are pressing for progress, we are still uncertain whether in the course of advance we may not meet with a rebuff. Then the thing to do is simply continue in what is right; in the end this will bring good fortune. It may be that we meet with no confidence. In this case we ought not to try to win confidence regardless of the situation, but should remain calm and cheerful and refuse to be roused to anger. Thus we remain free of mistakes."
+                "text": "Progressing, but turned back.\nPerseverance brings good fortune.\nIf one meets with no confidence, one should remain calm.\nNo mistake.",
+                "comments": "At a time when all elements are pressing for progress, we are still uncertain whether in the course of advance we may not meet with a rebuff. Then the thing to do is simply continue in what is right; in the end this will bring good fortune. It may be that we meet with no confidence. In this case we ought not to try to win confidence regardless of the situation, but should remain calm and cheerful and refuse to be roused to anger. Thus we remain free of mistakes."
             },
             "2": {
-                "text": "Progressing, but in sorrow.\nPerseverance brings good fortune.",
-                "comments": "Then one obtains great happiness from one's ancestress.\n\nProgress is halted; an individual is kept from getting in touch with the man in authority with whom he has a connection. When this happens, he must remain persevering, although he is grieved; then with a maternal gentleness the man in question will bestow great happiness upon him. This happiness comes to him-and is well deserved-because in this case mutual attraction does not rest on selfish or partisan motives but on firm and correct principles."
+                "text": "Progressing, but in sorrow.\nPerseverance brings good fortune.\nThen one obtains great happiness from one's ancestress.",
+                "comments": "Progress is halted; an individual is kept from getting in touch with the man in authority with whom he has a connection. When this happens, he must remain persevering, although he is grieved; then with a maternal gentleness the man in question will bestow great happiness upon him. This happiness comes to him-and is well deserved-because in this case mutual attraction does not rest on selfish or partisan motives but on firm and correct principles."
             },
             "3": {
                 "text": "All are in accord. Remorse disappears.",
@@ -1880,12 +1880,12 @@ ICHING = {
                 "comments": "In times of progress it is easy for strong men in the wrong places to amass great possessions. But such conduct shuns the light. And since times of progress are inevitably brought to the light, perseverance in such action always leads to danger."
             },
             "5": {
-                "text": "Remorse disappears.",
-                "comments": "Take not gain and loss to heart.\nUndertakings bring good fortune.\nEverything serves to further.\n\nThe situation described here is that of one who, finding himself in an influential position in a time of progress, remains gentle and reserved. He might reproach himself for lack of energy in making the most of the propitiousness of the time and obtaining all possible advantage. However, this regret passes away. He must not take either loss or gain to heart; they are minor considerations. What matters much more is the fact that in this way he has assured himself of opportunities for successful and beneficent influence."
+                "text": "Remorse disappears.\nTake not gain and loss to heart.\nUndertakings bring good fortune.\nEverything serves to further.",
+                "comments": "The situation described here is that of one who, finding himself in an influential position in a time of progress, remains gentle and reserved. He might reproach himself for lack of energy in making the most of the propitiousness of the time and obtaining all possible advantage. However, this regret passes away. He must not take either loss or gain to heart; they are minor considerations. What matters much more is the fact that in this way he has assured himself of opportunities for successful and beneficent influence."
             },
             "6": {
-                "text": "Making progress with the horns is permissible\nOnly for the purpose of punishing one's own city.",
-                "comments": "To be conscious of danger brings good fortune.\n\nNo blame.\nPerseverance brings humiliation.\n\nMaking progress with lowered horns-i.e., acting on the offensive-is permissible, in times like those referred to here, only in dealing with the mistakes of one's own people. Even then we must bear in mind that proceeding on the offensive may always be dangerous. In this way we avoid the mistakes that otherwise threaten, and succeed in what we set out to do. On the other hand, perseverance in such over energetic behavior, especially toward persons with whom there is no close connection, will lead to humiliation."
+                "text": "Making progress with the horns is permissible\nOnly for the purpose of punishing one's own city.\nTo be conscious of danger brings good fortune.\nNo blame.\nPerseverance brings humiliation.",
+                "comments": "Making progress with lowered horns-i.e., acting on the offensive-is permissible, in times like those referred to here, only in dealing with the mistakes of one's own people. Even then we must bear in mind that proceeding on the offensive may always be dangerous. In this way we avoid the mistakes that otherwise threaten, and succeed in what we set out to do. On the other hand, perseverance in such over energetic behavior, especially toward persons with whom there is no close connection, will lead to humiliation."
             }
         }
     },
