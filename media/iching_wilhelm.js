@@ -2192,24 +2192,24 @@ ICHING = {
                 "comments": "It is unselfish and good when a man, after completing his own urgent tasks, uses his strength in the service of others, and without bragging or making much of it, helps quickly where help is needed. But the man in a superior position who is thus aided must weigh carefully how much he can accept without doing the helpful servant or friend real harm. Only where such delicacy of feeling exists can one give oneself unconditionally and without hesitation."
             },
             "2": {
-                "text": "Perseverance furthers.",
-                "comments": "To undertake something brings misfortune.\nWithout decreasing oneself,\nOne is able to bring increase to others.\n\nA high-minded self-awareness and a consistent seriousness with no forfeit of dignity are necessary if a man wants to be of service to others. He who throw himself away in order to do the bidding of a superior diminishes his own position without thereby giving lasting benefit to the other. This is wrong. To render true service of lasting value to another, one must serve him without relinquishing oneself."
+                "text": "Perseverance furthers.\nTo undertake something brings misfortune.\nWithout decreasing oneself,\nOne is able to bring increase to others.",
+                "comments": "A high-minded self-awareness and a consistent seriousness with no forfeit of dignity are necessary if a man wants to be of service to others. He who throw himself away in order to do the bidding of a superior diminishes his own position without thereby giving lasting benefit to the other. This is wrong. To render true service of lasting value to another, one must serve him without relinquishing oneself."
             },
             "3": {
-                "text": "When three people journey together,",
-                "comments": "Their number increases by one.\nWhen one man journeys alone,\nHe finds a companion.\n\nWhen there are three people together, jealousy arises. One of them will have to go. Avery close bond is possible only between two people. But when one man is lonely, he is certain to find a companion who complements him."
+                "text": "When three people journey together,\nTheir number increases by one.\nWhen one man journeys alone,\nHe finds a companion.",
+                "comments": "When there are three people together, jealousy arises. One of them will have to go. Avery close bond is possible only between two people. But when one man is lonely, he is certain to find a companion who complements him."
             },
             "4": {
-                "text": "If a man deceases his faults,\nIt makes the other hasten to come and rejoice.",
-                "comments": "No blame.\n\nA man's faults often prevent even well-disposed people from coming closer to him. His faults are sometimes reinforced by the environment in which he lives. But if in humility he can bring himself to the point of giving them up, he frees his well-disposed friends from an inner pressure and causes them to approach the more quickly, and there is mutual joy."
+                "text": "If a man deceases his faults,\nIt makes the other hasten to come and rejoice.No blame.",
+                "comments": "A man's faults often prevent even well-disposed people from coming closer to him. His faults are sometimes reinforced by the environment in which he lives. But if in humility he can bring himself to the point of giving them up, he frees his well-disposed friends from an inner pressure and causes them to approach the more quickly, and there is mutual joy."
             },
             "5": {
-                "text": "Someone does indeed increase him.",
-                "comments": "Ten pairs of tortoises cannot oppose it.\n\nSupreme good fortune.\nIf someone is marked out by fate for good fortune, it comes without fail. All oracles-as for instance those that are read from the shells of tortoises-are bound to concur in giving him favorable signs. He need fear nothing, because his luck is ordained from on high."
+                "text": "Someone does indeed increase him.\nTen pairs of tortoises cannot oppose it.\nSupreme good fortune.",
+                "comments": "If someone is marked out by fate for good fortune, it comes without fail. All oracles-as for instance those that are read from the shells of tortoises-are bound to concur in giving him favorable signs. He need fear nothing, because his luck is ordained from on high."
             },
             "6": {
-                "text": "If one is increased without depriving other,",
-                "comments": "There is no blame.\nPerseverance brings good fortune.\nIt furthers one to undertake something.\nOne obtains servants\nBut no longer has a separate home.\n\nThere are people who dispense blessings to the whole world. Every increase in power that comes to them benefits the whole of mankind and therefore does not bring decrease to others. Through perseverance and zealous work a man wins success and finds helpers as they are needed. But what he accomplishes is not a limited private advantage; it is a public good and available to everyone."
+                "text": "If one is increased without depriving other,\nThere is no blame.\nPerseverance brings good fortune.\nIt furthers one to undertake something.\nOne obtains servants\nBut no longer has a separate home.",
+                "comments": "There are people who dispense blessings to the whole world. Every increase in power that comes to them benefits the whole of mankind and therefore does not bring decrease to others. Through perseverance and zealous work a man wins success and finds helpers as they are needed. But what he accomplishes is not a limited private advantage; it is a public good and available to everyone."
             }
         }
     },
