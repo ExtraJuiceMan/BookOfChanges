@@ -2566,16 +2566,16 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "One does not drink the mud of the well.",
-                "comments": "No animals come to an old well.\n\nIf a man wanders around in swampy lowlands, his life is submerged in mud. Such a man loses all significance for mankind. He who throws himself away is no longer sought out by others. In the end no one troubles about him any more."
+                "text": "One does not drink the mud of the well.\nNo animals come to an old well.",
+                "comments": "If a man wanders around in swampy lowlands, his life is submerged in mud. Such a man loses all significance for mankind. He who throws himself away is no longer sought out by others. In the end no one troubles about him any more."
             },
             "2": {
-                "text": "At the well hole one shoots fishes.",
-                "comments": "The jug is broken and leaks.\n\nThe water itself is clear, but it is not being used. Thus the well is a place where only fish will stay, and whoever comes to it, comes only to catch fish. But the jug is broken, so that the fish cannot be kept in it. This describes the situation of a person who possesses good qualities but neglects them. No one bothers about him. As a result he deteriorates in mind. He associates with inferior men and can no longer accomplish anything worth while."
+                "text": "At the well hole one shoots fishes.\nThe jug is broken and leaks.",
+                "comments": "The water itself is clear, but it is not being used. Thus the well is a place where only fish will stay, and whoever comes to it, comes only to catch fish. But the jug is broken, so that the fish cannot be kept in it. This describes the situation of a person who possesses good qualities but neglects them. No one bothers about him. As a result he deteriorates in mind. He associates with inferior men and can no longer accomplish anything worth while."
             },
             "3": {
-                "text": "The well is cleaned, but no one drinks from it.",
-                "comments": "This is my heart's sorrow,\nFor one might draw from it.\nIf the king were clear-minded,\nGood fortune might be enjoyed in common.\n\nAn able man is available. He is like a purified well whose water is drinkable. But no use is made of him. This is the sorrow of those who know him. One wishes that the prince might learn about it; this would be good fortune for all concerned."
+                "text": "The well is cleaned, but no one drinks from it.\nThis is my heart's sorrow,\nFor one might draw from it.\nIf the king were clear-minded,\nGood fortune might be enjoyed in common.",
+                "comments": "An able man is available. He is like a purified well whose water is drinkable. But no use is made of him. This is the sorrow of those who know him. One wishes that the prince might learn about it; this would be good fortune for all concerned."
             },
             "4": {
                 "text": "The well is being lined. No blame.",
@@ -2586,8 +2586,8 @@ ICHING = {
                 "comments": "A well that is fed by a spring of living water is a good well. A man who has virtues like a well of this sort is born to be a leader and savior of men, for he has the water of life. Nevertheless, the character for \"good fortune\" is left out here. The all-important thing about a well is that its water be drawn. The best water is only a potentiality for refreshment as long as it is not brought up. So too with leaders of mankind: it is all-important that one should drink from the spring of their words and translate them into life."
             },
             "6": {
-                "text": "One draws from the well\nWithout hindrance.\nIt is dependable.",
-                "comments": "Supreme good fortune.\n\nThe well is there fore all. No one is forbidden to take water from it. No matter how many come, all find what they need, for the well is dependable. It has a spring and never runs dry. Therefore it is a great blessing to the whole land. The same is true of the really great man, whose inner wealth is inexhaustible; the more that people draw from him, the greater his wealth becomes."
+                "text": "One draws from the well\nWithout hindrance.\nIt is dependable.\nSupreme good fortune.",
+                "comments": "The well is there fore all. No one is forbidden to take water from it. No matter how many come, all find what they need, for the well is dependable. It has a spring and never runs dry. Therefore it is a great blessing to the whole land. The same is true of the really great man, whose inner wealth is inexhaustible; the more that people draw from him, the greater his wealth becomes."
             }
         }
     },
