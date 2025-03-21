@@ -2782,8 +2782,8 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "Keeping his toes still.",
-                "comments": "No blame.\nContinued perseverance furthers.\n\nKeeping the toes still means halting before one has even begun to move. The beginning is the time of few mistakes. At that time one is still in harmony with primal innocence. Not yet influenced by obscuring interests and desires, one sees things intuitively as they really are. A man who halts at the beginning, so long as he has not yet abandoned the truth, finds the right way. But persisting firmness is needed to keep one from drifting irresolutely."
+                "text": "Keeping his toes still.\nNo blame.\nContinued perseverance furthers.",
+                "comments": "Keeping the toes still means halting before one has even begun to move. The beginning is the time of few mistakes. At that time one is still in harmony with primal innocence. Not yet influenced by obscuring interests and desires, one sees things intuitively as they really are. A man who halts at the beginning, so long as he has not yet abandoned the truth, finds the right way. But persisting firmness is needed to keep one from drifting irresolutely."
             },
             "2": {
                 "text": "Keeping his calves still.\nHe cannot rescue him whom he follows.\nHis heart is not glad.",
@@ -2794,12 +2794,12 @@ ICHING = {
                 "comments": "This refers to enforced quiet. The restless heart is to be subdued by forcible means. But fire when it is smothered changes into acrid smoke that suffocates as it spreads. Therefore, in exercises in meditation and concentration, one ought not to try to force results. Rather, calmness must develop naturally out of a state of inner composure. If one tries to induce calmness by means of artificial rigidity, meditation will lead to very unwholesome results."
             },
             "4": {
-                "text": "Keeping his trunk still.",
-                "comments": "No blame.\n\nAs has been pointed out above in the comment on the Judgment, keeping the back at rest means forgetting the ego. This is the highest stage of rest. Here this stage has not yet been reached: the individual in this instance, though able to keep the ego, with its thoughts and impulses, in a state of rest, is not yet quite liberated from its dominance. Nonetheless, keeping the heart at rest is an important function, leading in the end to the complete elimination of egotistic drives. Even though at this point one does not yet remain free from all the dangers of doubt and unrest, this frame of mind is not a mistake, as it leads ultimately to that other, higher level."
+                "text": "Keeping his trunk still.\nNo blame.",
+                "comments": "As has been pointed out above in the comment on the Judgment, keeping the back at rest means forgetting the ego. This is the highest stage of rest. Here this stage has not yet been reached: the individual in this instance, though able to keep the ego, with its thoughts and impulses, in a state of rest, is not yet quite liberated from its dominance. Nonetheless, keeping the heart at rest is an important function, leading in the end to the complete elimination of egotistic drives. Even though at this point one does not yet remain free from all the dangers of doubt and unrest, this frame of mind is not a mistake, as it leads ultimately to that other, higher level."
             },
             "5": {
-                "text": "Keeping his jaws still.",
-                "comments": "The words have order.\nRemorse disappears.\n\nA man in a dangerous situation, especially when he is not adequate to it, is inclined to be very free with talk and presumptuous jokes. But injudicious speech easily leads to situations that subsequently give much cause for regret. However, if a man is reserved in speech, his words take ever more definite form, and every occasion for regret vanishes."
+                "text": "Keeping his jaws still.\nThe words have order.\nRemorse disappears.",
+                "comments": "A man in a dangerous situation, especially when he is not adequate to it, is inclined to be very free with talk and presumptuous jokes. But injudicious speech easily leads to situations that subsequently give much cause for regret. However, if a man is reserved in speech, his words take ever more definite form, and every occasion for regret vanishes."
             },
             "6": {
                 "text": "Noblehearted keeping still.\nGood fortune.",
