@@ -3052,8 +3052,8 @@ ICHING = {
         },
         "wilhelm_lines": {
             "1": {
-                "text": "In advancing and in retreating,",
-                "comments": "The perseverance of a warrior furthers.\n\nIn born gentleness is often carried to the point of indecisiveness. One does not feel strong enough to advance resolutely. A thousand doubts crop up; one is, however, not minded to withdraw but drifts indecisively to and fro. In such a situation, a military decisiveness is the proper thing, so that one resolutely does what order demands. Resolute discipline is far better than irresolute license."
+                "text": "In advancing and in retreating,\nThe perseverance of a warrior furthers.",
+                "comments": "In born gentleness is often carried to the point of indecisiveness. One does not feel strong enough to advance resolutely. A thousand doubts crop up; one is, however, not minded to withdraw but drifts indecisively to and fro. In such a situation, a military decisiveness is the proper thing, so that one resolutely does what order demands. Resolute discipline is far better than irresolute license."
             },
             "2": {
                 "text": "Penetration under the bed.\nPriests and magicians are used in great number.\nGood fortune. No blame.",
@@ -3064,12 +3064,12 @@ ICHING = {
                 "comments": "Penetrating reflection must not be pushed too far, lest it cripple the power of decision. After a matter has been thoroughly pondered, it is essential to form a decision and to act. Repeated deliberation brings fresh doubts and scruples, and thereby humiliation, because one shows oneself unable to act."
             },
             "4": {
-                "text": "Remorse vanishes.\nDuring the hunt",
-                "comments": "Three kinds of game are caught.\n\nWhen a responsible position and accumulated experience lead one to combine innate modesty with energetic action, great success is assured. The three kinds of animals referred to served for offerings to the gods, for feasting guests, and for everyday consumption. When the catch answered all three purposes, the hunt was considered especially successful."
+                "text": "Remorse vanishes.\nDuring the hunt\nThree kinds of game are caught.",
+                "comments": "When a responsible position and accumulated experience lead one to combine innate modesty with energetic action, great success is assured. The three kinds of animals referred to served for offerings to the gods, for feasting guests, and for everyday consumption. When the catch answered all three purposes, the hunt was considered especially successful."
             },
             "5": {
-                "text": "Perseverance brings good fortune.\nRemorse vanishes.",
-                "comments": "Nothing that does not further.\n\nNo beginning, but an end.\nBefore the change, three days.\nAfter the change, three days.\nGood fortune.\n\nIn the situation described in Ku, WORK ON WHAT HAS BEEN SPOILED\n\n18, an entirely new point of departure must be set up, whereas here it is only a question of reforms. The beginning has not been good, but the moment has been reached when a new direction can be taken. Change and improvement are called for. Such steps must be undertaken with steadfastness, that is, with a firm and correct attitude of mind; then they will succeed, and remorse will disappear. But it must be remembered that such improvements require careful consideration. Before a change is made, it must be pondered over again and again. After the change is made, it is necessary to note carefully for some time after how the improvements bear the test of actuality. Such careful work is accompanied by good fortune."
+                "text": "Perseverance brings good fortune.\nRemorse vanishes.\nNothing that does not further.\nNo beginning, but an end.\nBefore the change, three days.\nAfter the change, three days.\nGood fortune.",
+                "comments": "In the situation described in Ku, WORK ON WHAT HAS BEEN SPOILED (18), an entirely new point of departure must be set up, whereas here it is only a question of reforms. The beginning has not been good, but the moment has been reached when a new direction can be taken. Change and improvement are called for. Such steps must be undertaken with steadfastness, that is, with a firm and correct attitude of mind; then they will succeed, and remorse will disappear. But it must be remembered that such improvements require careful consideration. Before a change is made, it must be pondered over again and again. After the change is made, it is necessary to note carefully for some time after how the improvements bear the test of actuality. Such careful work is accompanied by good fortune."
             },
             "6": {
                 "text": "Penetration under the bed.\nHe loses his property and his ax.\nPerseverance brings misfortune.",
