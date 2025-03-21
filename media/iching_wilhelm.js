@@ -3222,8 +3222,8 @@ ICHING = {
                 "comments": "When the time for action has come, the moment must be quickly seized. Just as water first collects in a lake without flowing out, yet is certain to find an outlet when the lake is full, so it is in the life of man. It is a good thing to hesitate so long as the time for action has not come, but no longer. Once the obstacles to action have been removed, anxious hesitation is a mistake that is bound to bring disaster, because one misses one's opportunity."
             },
             "3": {
-                "text": "He who knows limitation\nWill have cause to lament.",
-                "comments": "No blame.\n\nIf an individual is bent only on pleasures and enjoyment, it is easy for him to lose his sense of the limits that are necessary. If he gives himself over to extravagance, he will have to suffer the consequences, with accompanying regret. He must not seek to lay the blame on others. Only when we realize that our mistakes are of our own making will such disagreeable experiences free us of errors."
+                "text": "He who knows limitation\nWill have cause to lament.\nNo blame.",
+                "comments": "If an individual is bent only on pleasures and enjoyment, it is easy for him to lose his sense of the limits that are necessary. If he gives himself over to extravagance, he will have to suffer the consequences, with accompanying regret. He must not seek to lay the blame on others. Only when we realize that our mistakes are of our own making will such disagreeable experiences free us of errors."
             },
             "4": {
                 "text": "Contented limitation. Success.",
