@@ -312,6 +312,8 @@ tr:nth-child(even) {
 .iching-text {
     text-align: left;
     display:inline-block;
+    border-inline-start: 0.38rem solid var(--accent);
+    padding: 0.4rem 0.8rem;
 }
 
 .iching-entry-summary {

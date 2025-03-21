@@ -511,7 +511,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_judgment.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_judgment.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -521,7 +521,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_image.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_image.comments}}
             </details>
             <details class="iching-entry-details" >
@@ -535,7 +535,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.1.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.1.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -545,7 +545,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.2.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.2.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -555,7 +555,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.3.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.3.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -565,7 +565,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.4.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.4.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -575,7 +575,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.5.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.5.comments}}
             </details>
             <details class="iching-entry-details" open="">
@@ -585,7 +585,7 @@ function templateIChing() {
                 <div class="iching-text-outer">
                     <b class="iching-text">{{w.wilhelm_lines.6.text}}</b>
                 </div>
-                <br/><br/>
+                <br/>
                 {{w.wilhelm_lines.6.comments}}
             </details>
             </details>
