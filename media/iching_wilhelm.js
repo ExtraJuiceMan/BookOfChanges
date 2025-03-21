@@ -455,7 +455,7 @@ ICHING = {
             "comments": "This image refers to the state of affairs in China at the time when King Wên, who came originally from the west, was in the east at the court of the reigning tyrant Chou Hsin. The moment for action on a large scale had not yet arrived. King Wên could only keep the tyrant somewhat in check by friendly persuasion. Hence the image of many clouds, promising moisture and blessing to the land, although as yet no rain falls. The situation is not unfavorable; there is a prospect of ultimate success, but there are still obstacles in the way, and we can merely take preparatory measures. Only through the small means of friendly persuasion can we exert any influence. The time has not yet come for sweeping measures. However, we may be able, to a limited extent, to act as a restraining and subduing influence. To carry out our purpose we need firm determination within and gentleness and adaptability in external relations."
         },
         "wilhelm_image": {
-            "text": "The wind drives across heaven:\nThe image of THE TAMING POWER OF THE SMALL.Thus the superior man\nRefines the outward aspect of his nature.",
+            "text": "The wind drives across heaven:\nThe image of THE TAMING POWER OF THE SMALL.\nThus the superior man\nRefines the outward aspect of his nature.",
             "comments": "The wind can indeed drive the clouds together in the sky; yet, being nothing but air, without solid body, it does not produce great or lasting effects. So also an individual, in times when he can produce no great effect in the outer world, can do nothing except refine the expression of his nature in small ways."
         },
         "wilhelm_lines": {
