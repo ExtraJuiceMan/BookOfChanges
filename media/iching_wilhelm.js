@@ -113,7 +113,7 @@ ICHING = {
         "trad_chinese": "屯",
         "pinyin": "zhūn",
         "english": "Beginning",
-        "binary": "010001",
+        "binary": "100010",
         "od": 50,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -167,7 +167,7 @@ ICHING = {
         "trad_chinese": "蒙",
         "pinyin": "méng",
         "english": "Childhood",
-        "binary": "100010",
+        "binary": "010001",
         "od": 49,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -221,7 +221,7 @@ ICHING = {
         "trad_chinese": "需",
         "pinyin": "xū",
         "english": "Needing",
-        "binary": "010111",
+        "binary": "111010",
         "od": 35,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -275,7 +275,7 @@ ICHING = {
         "trad_chinese": "訟",
         "pinyin": "sòng",
         "english": "Contention",
-        "binary": "111010",
+        "binary": "010111",
         "od": 36,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -329,7 +329,7 @@ ICHING = {
         "trad_chinese": "師",
         "pinyin": "shī",
         "english": "Multitude",
-        "binary": "000010",
+        "binary": "010000",
         "od": 13,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -383,7 +383,7 @@ ICHING = {
         "trad_chinese": "比",
         "pinyin": "bǐ",
         "english": "Union",
-        "binary": "010000",
+        "binary": "000010",
         "od": 14,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -437,7 +437,7 @@ ICHING = {
         "trad_chinese": "小畜",
         "pinyin": "xiǎochù",
         "english": "Little Accumulation",
-        "binary": "110111",
+        "binary": "111011",
         "od": 16,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -491,7 +491,7 @@ ICHING = {
         "trad_chinese": "履",
         "pinyin": "lǚ",
         "english": "Fulfillment",
-        "binary": "111011",
+        "binary": "110111",
         "od": 15,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -545,7 +545,7 @@ ICHING = {
         "trad_chinese": "泰",
         "pinyin": "tài",
         "english": "Advance",
-        "binary": "000111",
+        "binary": "111000",
         "od": 12,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -599,7 +599,7 @@ ICHING = {
         "trad_chinese": "否",
         "pinyin": "pǐ",
         "english": "Hindrance",
-        "binary": "111000",
+        "binary": "000111",
         "od": 11,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -653,7 +653,7 @@ ICHING = {
         "trad_chinese": "同人",
         "pinyin": "tóngrén",
         "english": "Seeking Harmony",
-        "binary": "111101",
+        "binary": "101111",
         "od": "07",
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -707,7 +707,7 @@ ICHING = {
         "trad_chinese": "大有",
         "pinyin": "dàyǒu",
         "english": "Great Harvest",
-        "binary": "101111",
+        "binary": "111101",
         "od": "08",
         "wilhelm_above": {
             "chinese": "LI",
@@ -761,7 +761,7 @@ ICHING = {
         "trad_chinese": "謙",
         "pinyin": "qiān",
         "english": "Humbleness",
-        "binary": "000100",
+        "binary": "001000",
         "od": 10,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -815,7 +815,7 @@ ICHING = {
         "trad_chinese": "豫",
         "pinyin": "yù",
         "english": "Delight",
-        "binary": "001000",
+        "binary": "000100",
         "od": "09",
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -869,7 +869,7 @@ ICHING = {
         "trad_chinese": "隨",
         "pinyin": "suí",
         "english": "Following",
-        "binary": "011001",
+        "binary": "100110",
         "od": 18,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -923,7 +923,7 @@ ICHING = {
         "trad_chinese": "蠱",
         "pinyin": "gǔ",
         "english": "Remedying",
-        "binary": "100110",
+        "binary": "011001",
         "od": 17,
         "wilhelm_above": {
             "chinese": "Kên",
@@ -977,7 +977,7 @@ ICHING = {
         "trad_chinese": "臨",
         "pinyin": "lín",
         "english": "Approaching",
-        "binary": "000011",
+        "binary": "110000",
         "od": 33,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -1031,7 +1031,7 @@ ICHING = {
         "trad_chinese": "觀",
         "pinyin": "guān",
         "english": "Watching",
-        "binary": "110000",
+        "binary": "000011",
         "od": 34,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -1085,7 +1085,7 @@ ICHING = {
         "trad_chinese": "噬嗑",
         "pinyin": "shìkè",
         "english": "Eradicating",
-        "binary": "101001",
+        "binary": "100101",
         "od": 48,
         "wilhelm_above": {
             "chinese": "LI",
@@ -1139,7 +1139,7 @@ ICHING = {
         "trad_chinese": "賁",
         "pinyin": "bì",
         "english": "Adorning",
-        "binary": "100101",
+        "binary": "101001",
         "od": 47,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -1193,7 +1193,7 @@ ICHING = {
         "trad_chinese": "剝",
         "pinyin": "bō",
         "english": "Falling Away",
-        "binary": "100000",
+        "binary": "000001",
         "od": 43,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -1247,7 +1247,7 @@ ICHING = {
         "trad_chinese": "復",
         "pinyin": "fù",
         "english": "Turning Back",
-        "binary": "000001",
+        "binary": "100000",
         "od": 44,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -1301,7 +1301,7 @@ ICHING = {
         "trad_chinese": "無妄",
         "pinyin": "wúwàng",
         "english": "Without Falsehood",
-        "binary": "111001",
+        "binary": "100111",
         "od": 46,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -1355,7 +1355,7 @@ ICHING = {
         "trad_chinese": "大畜",
         "pinyin": "dàchù",
         "english": "Great Accumulation",
-        "binary": "100111",
+        "binary": "111001",
         "od": 45,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -1625,7 +1625,7 @@ ICHING = {
         "trad_chinese": "咸",
         "pinyin": "xián",
         "english": "Mutual Influence",
-        "binary": "011100",
+        "binary": "001110",
         "od": 41,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -1679,7 +1679,7 @@ ICHING = {
         "trad_chinese": "恆",
         "pinyin": "héng",
         "english": "Long Lasting",
-        "binary": "001110",
+        "binary": "011100",
         "od": 42,
         "wilhelm_above": {
             "chinese": "CHEN",
@@ -1733,7 +1733,7 @@ ICHING = {
         "trad_chinese": "遯",
         "pinyin": "dùn",
         "english": "Retreat",
-        "binary": "111100",
+        "binary": "001111",
         "od": 19,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -1787,7 +1787,7 @@ ICHING = {
         "trad_chinese": "大壯",
         "pinyin": "dàzhuàng",
         "english": "Great Strength",
-        "binary": "001111",
+        "binary": "111100",
         "od": 20,
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -1841,7 +1841,7 @@ ICHING = {
         "trad_chinese": "晉",
         "pinyin": "jìn",
         "english": "Proceeding Forward",
-        "binary": "101000",
+        "binary": "000101",
         "od": "05",
         "wilhelm_above": {
             "chinese": "LI",
@@ -1895,7 +1895,7 @@ ICHING = {
         "trad_chinese": "明夷",
         "pinyin": "míngyí",
         "english": "Brilliance Injured",
-        "binary": "000101",
+        "binary": "101000",
         "od": "06",
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -1949,7 +1949,7 @@ ICHING = {
         "trad_chinese": "家人",
         "pinyin": "jiārén",
         "english": "Household",
-        "binary": "110101",
+        "binary": "101011",
         "od": 40,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -2003,7 +2003,7 @@ ICHING = {
         "trad_chinese": "睽",
         "pinyin": "kuí",
         "english": "Diversity",
-        "binary": "101011",
+        "binary": "110101",
         "od": 39,
         "wilhelm_above": {
             "chinese": "LI",
@@ -2057,7 +2057,7 @@ ICHING = {
         "trad_chinese": "蹇",
         "pinyin": "jiǎn",
         "english": "Hardship",
-        "binary": "010100",
+        "binary": "001010",
         "od": 38,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -2111,7 +2111,7 @@ ICHING = {
         "trad_chinese": "解",
         "pinyin": "xiè",
         "english": "Relief",
-        "binary": "001010",
+        "binary": "010100",
         "od": 37,
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -2165,7 +2165,7 @@ ICHING = {
         "trad_chinese": "損",
         "pinyin": "sǔn",
         "english": "Decreasing",
-        "binary": "100011",
+        "binary": "110001",
         "od": 31,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -2219,7 +2219,7 @@ ICHING = {
         "trad_chinese": "益",
         "pinyin": "yì",
         "english": "Increasing",
-        "binary": "110001",
+        "binary": "100011",
         "od": 32,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -2273,7 +2273,7 @@ ICHING = {
         "trad_chinese": "夬",
         "pinyin": "guài",
         "english": "Eliminating",
-        "binary": "011111",
+        "binary": "111110",
         "od": 23,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -2327,7 +2327,7 @@ ICHING = {
         "trad_chinese": "姤",
         "pinyin": "gòu",
         "english": "Encountering",
-        "binary": "111110",
+        "binary": "011111",
         "od": 24,
         "wilhelm_above": {
             "chinese": "CH'IEN",
@@ -2381,7 +2381,7 @@ ICHING = {
         "trad_chinese": "萃",
         "pinyin": "cuì",
         "english": "Bringing Together",
-        "binary": "011000",
+        "binary": "000110",
         "od": 26,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -2435,7 +2435,7 @@ ICHING = {
         "trad_chinese": "升",
         "pinyin": "shēng",
         "english": "Growing Upward",
-        "binary": "000110",
+        "binary": "011000",
         "od": 25,
         "wilhelm_above": {
             "chinese": "K'UN",
@@ -2489,7 +2489,7 @@ ICHING = {
         "trad_chinese": "困",
         "pinyin": "kùn",
         "english": "Exhausting",
-        "binary": "011010",
+        "binary": "010110",
         "od": 22,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -2543,7 +2543,7 @@ ICHING = {
         "trad_chinese": "井",
         "pinyin": "jǐng",
         "english": "Replenishing",
-        "binary": "010110",
+        "binary": "011010",
         "od": 21,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -2597,7 +2597,7 @@ ICHING = {
         "trad_chinese": "革",
         "pinyin": "gé",
         "english": "Abolishing The Old",
-        "binary": "011101",
+        "binary": "101110",
         "od": "04",
         "wilhelm_above": {
             "chinese": "TUI",
@@ -2651,7 +2651,7 @@ ICHING = {
         "trad_chinese": "鼎",
         "pinyin": "dǐng",
         "english": "Establishing The New",
-        "binary": "101110",
+        "binary": "011101",
         "od": "03",
         "wilhelm_above": {
             "chinese": "LI",
@@ -2705,7 +2705,7 @@ ICHING = {
         "trad_chinese": "震",
         "pinyin": "zhèn",
         "english": "Taking Action",
-        "binary": "001001",
+        "binary": "100100",
         "od": 57,
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -2759,7 +2759,7 @@ ICHING = {
         "trad_chinese": "艮",
         "pinyin": "gèn",
         "english": "Keeping Still",
-        "binary": "100100",
+        "binary": "001001",
         "od": 58,
         "wilhelm_above": {
             "chinese": "KêN",
@@ -2813,7 +2813,7 @@ ICHING = {
         "trad_chinese": "漸",
         "pinyin": "jiàn",
         "english": "Developing Gradually",
-        "binary": "110100",
+        "binary": "001011",
         "od": 54,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -2867,7 +2867,7 @@ ICHING = {
         "trad_chinese": "歸妹",
         "pinyin": "guīmèi",
         "english": "Marrying Maiden",
-        "binary": "001011",
+        "binary": "110100",
         "od": 53,
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -2921,7 +2921,7 @@ ICHING = {
         "trad_chinese": "豐",
         "pinyin": "fēng",
         "english": "Abundance",
-        "binary": "001101",
+        "binary": "101100",
         "od": 59,
         "wilhelm_above": {
             "chinese": "CHêN",
@@ -2975,7 +2975,7 @@ ICHING = {
         "trad_chinese": "旅",
         "pinyin": "lǚ",
         "english": "Travelling",
-        "binary": "101100",
+        "binary": "001101",
         "od": 60,
         "wilhelm_above": {
             "chinese": "LI",
@@ -3029,7 +3029,7 @@ ICHING = {
         "trad_chinese": "巽",
         "pinyin": "xùn",
         "english": "Proceeding Humbly",
-        "binary": "110110",
+        "binary": "011011",
         "od": 51,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -3083,7 +3083,7 @@ ICHING = {
         "trad_chinese": "兌",
         "pinyin": "duì",
         "english": "Joyful",
-        "binary": "011011",
+        "binary": "110110",
         "od": 52,
         "wilhelm_above": {
             "chinese": "TUI",
@@ -3137,7 +3137,7 @@ ICHING = {
         "trad_chinese": "渙",
         "pinyin": "huàn",
         "english": "Dispersing",
-        "binary": "110010",
+        "binary": "010011",
         "od": 55,
         "wilhelm_above": {
             "chinese": "SUN",
@@ -3191,7 +3191,7 @@ ICHING = {
         "trad_chinese": "節",
         "pinyin": "jié",
         "english": "Restricting",
-        "binary": "010011",
+        "binary": "110010",
         "od": 56,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -3353,7 +3353,7 @@ ICHING = {
         "trad_chinese": "既濟",
         "pinyin": "jìjì",
         "english": "Already Fulfilled",
-        "binary": "010101",
+        "binary": "101010",
         "od": 64,
         "wilhelm_above": {
             "chinese": "K'AN",
@@ -3407,7 +3407,7 @@ ICHING = {
         "trad_chinese": "未濟",
         "pinyin": "wèijì",
         "english": "Not Yet Fulfilled",
-        "binary": "101010",
+        "binary": "010101",
         "od": 63,
         "wilhelm_above": {
             "chinese": "LI",
