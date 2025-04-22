@@ -255,6 +255,16 @@ function runBuildPageWorker() {
     worker.addEventListener("message", e => {
         injectBookEntries(e.data.entries);
         injectIndexEntries(e.data.index);
+
+        if (window.location.hash !== "") {
+            let el = document.getElementById(window.location.hash.substring(1));
+            if (el !== null) {
+                el.scrollIntoView({
+                    behavior: "smooth", 
+                    block: "start"
+                });
+            }
+        }
     });
 
     worker.postMessage(null);
