@@ -3,19 +3,25 @@ import { SVG } from "@svgdotjs/svg.js";
 import { TemplateBookEntry, TemplateIndexEntry } from "./template";
 import { toTitleCase } from "./utility";
 
-export function buildBookIndex(book) {
+export function buildBookIndex(book, callback) {
     let indexEntries = [];
 
     for (const k in book) {
         const entry = book[k];
 
-        indexEntries.push({ html: TemplateIndexEntry(entry), svgId: `index-hexagram-svg-${entry.hex}`, binary: entry.binary });
+        let value = { html: TemplateIndexEntry(entry), svgId: `index-hexagram-svg-${entry.hex}`, binary: entry.binary };
+
+        if (callback === undefined) {
+            indexEntries.push(value);
+        } else {
+            callback(value);
+        }
     }
 
     return indexEntries;
 }
 
-export function buildBookEntries(book) {
+export function buildBookEntries(book, callback) {
     let entries = [];
 
     for (const k in book) {
@@ -49,32 +55,42 @@ export function buildBookEntries(book) {
 
         entry.binary = entry.binary.toString();
 
-        entries.push({ html: TemplateBookEntry(entry, { text_class }), svgId: `hexagram-svg-${entry.hex}`, binary: entry.binary });
+        let value = { html: TemplateBookEntry(entry, { text_class }), svgId: `hexagram-svg-${entry.hex}`, binary: entry.binary };
+
+        if (callback === undefined) {
+            entries.push(value);
+        } else {
+            callback(value);
+        }
     }
 
     return entries;
 }
 
-export function injectBookEntries(entries) {
-    document.getElementById("iching-entries").innerHTML = entries.map(e => e.html).join("");
-
-    for (const entry of entries) {
-        new Hexagram(SVG(document.getElementById(entry.svgId))
-            .size(120, 120)
-            .viewbox(0, 0, 120, 120),
-            entry.binary
-        );
-    }
+function makeHexagramFromEntry(entry) {
+    new Hexagram(SVG(document.getElementById(entry.svgId))
+        .size(120, 120)
+        .viewbox(0, 0, 120, 120),
+        entry.binary
+    );
 }
 
-export function injectIndexEntries(entries) {
-    document.getElementById("iching-index").innerHTML = entries.map(e => e.html).join("");
+export function injectAllBookEntries(entries) {
+    document.getElementById("iching-entries").innerHTML = entries.map(e => e.html).join("");
+    entries.forEach((entry) => makeHexagramFromEntry(entry));
+}
 
-    for (const entry of entries) {
-        new Hexagram(SVG(document.getElementById(entry.svgId))
-            .size(120, 120)
-            .viewbox(0, 0, 120, 120),
-            entry.binary
-        );
-    }
+export function injectAllIndexEntries(entries) {
+    document.getElementById("iching-index").innerHTML = entries.map(e => e.html).join("");
+    entries.forEach((entry) => makeHexagramFromEntry(entry));
+}
+
+export function injectBookEntry(entry) {
+    document.getElementById("iching-entries").insertAdjacentHTML("beforeend", entry.html);
+    makeHexagramFromEntry(entry);
+}
+
+export function injectIndexEntry(entry) {
+    document.getElementById("iching-index").insertAdjacentHTML("beforeend", entry.html);
+    makeHexagramFromEntry(entry);
 }

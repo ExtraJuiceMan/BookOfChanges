@@ -6,7 +6,7 @@ import Hexagram from "./hexagram";
 import { SVG, Timeline } from "@svgdotjs/svg.js";
 import { castHexagramNumber, getRandomInt } from "./utility";
 import { YinYang, YinYangInvert, YARROW_STALK_TABLE, KING_WEN_SEQ } from "./constants";
-import { injectBookEntries, injectIndexEntries } from "./build-page";
+import { injectBookEntry, injectIndexEntry } from "./build-page";
 
 var castHexagram = undefined;
 var altHexagram = undefined;
@@ -252,17 +252,29 @@ function runBuildPageWorker() {
         type: "module"
     });
 
-    worker.addEventListener("message", e => {
-        injectBookEntries(e.data.entries);
-        injectIndexEntries(e.data.index);
+    let scrollId = window.location.hash;
 
-        if (window.location.hash !== "") {
-            let el = document.getElementById(window.location.hash.substring(1));
-            if (el !== null) {
-                el.scrollIntoView({
-                    behavior: "smooth", 
-                    block: "start"
-                });
+    worker.addEventListener("message", e => {
+        //injectBookEntries(e.data.entries);
+        //injectIndexEntries(e.data.index);
+
+        if (e.data.type === "index") {
+            injectIndexEntry(e.data.entry);
+        }
+
+        if (e.data.type === "book") {
+            injectBookEntry(e.data.entry);
+
+            if (scrollId !== "") {
+                let el = document.getElementById(scrollId.substring(1));
+
+                if (el !== null) {
+                    scrollId = "";
+                    el.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }
             }
         }
     });
