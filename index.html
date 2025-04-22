@@ -9,33 +9,21 @@
     <meta name="color-scheme" content="light only">
     <meta name="keywords"
         content="i ching, iching, i ching online, i ching fortune, i ching divination, iching oracle, yijing, book of changes, classic of changes">
-
-
     <meta property="og:title" content="I Ching - Classic of Changes">
     <meta property="og:site_name" content="https://classicofchanges.com">
     <meta property="og:url" content="https://classicofchanges.com">
     <meta property="og:description"
         content="A website serving as a tool to cast hexagrams in order to consult the I Ching (Yijing, Book of Changes, Classic of Changes), and also as a web-format edition of Richard Wilhelm's I Ching translation.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://classicofchanges.com/media/images/taijitu.png">
-
-    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
-    <script src="/media/iching_wilhelm.js"></script>
-    <script src="/media/main.js"></script>
-    <link rel="stylesheet" href="/media/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="/media/images/taijitu.svg" sizes="any" type="image/svg+xml">
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <meta property="og:image" content="https://classicofchanges.com/taijitu.png">
+    <link rel="icon" href="/taijitu.svg" sizes="any" type="image/svg+xml">
 </head>
 
 <body>
     <main class="container">
         <div class="header">
             <div class="header-hexagram">
-                <div id="hex-l"></div>
+                <svg id="hex-l" class="header-hexagram-svg"></svg>
             </div>
             <div class="header-title">
                 <h1>The I Ching
@@ -43,28 +31,32 @@
                 </h1>
             </div>
             <div class="header-hexagram">
-                <div id="hex-r"></div>
+                <svg id="hex-r" class="header-hexagram-svg"></svg>
             </div>
         </div>
         <h2>Consult the Oracle</h2>
         <section class="hexagram-cast">
-            <div id="cast" class="hexagram-cast-col"></div>
+            <div class="hexagram-cast-col">
+                <svg id="cast" class="cast-hexagram-svg"></svg>
+            </div>
             <div class="hexagram-cast-col">
                 <p>◄ Present</p>
-                <p><a id="present-view" style="display:none;" onclick="expandEntryLines();">[View]</a> Hexagram <span
+                <p><a id="present-view" style="display:none;">[View]</a> Hexagram <span
                         id="present-num"></span></p>
                 <p>► Future</p>
                 <p><a id="future-view" style="display:none;">[View]</a> Hexagram <span id="future-num"></span></p>
-                <button disabled autocomplete="false" id="reset" onclick="reset();">Reset</button>
+                <button disabled autocomplete="false" id="reset">Reset</button>
             </div>
-            <div id="cast-alt" class="hexagram-cast-col"></div>
+            <div class="hexagram-cast-col">
+                <svg id="cast-alt" class="cast-hexagram-svg"></svg>
+            </div>
 
         </section>
         <details open="true">
             <summary>Cast a Hexagram (RNG)</summary>
             <p>Casting a hexagram on this page uses the computer's RNG (random number generator) to build a hexagram.
             </p>
-            <button id="cast-btn" autocomplete="false" onclick="cast();">Cast</button>
+            <button id="cast-btn" autocomplete="false">Cast</button>
         </details>
         <details>
             <summary>Hexagram from Bits (24 Bits)</summary>
@@ -78,8 +70,7 @@
             <br />
             <input style="width: 50%" id="hex-bits" type="text" maxlength="24" minlength="24" pattern="[01]+"
                 placeholder="100010001001100110001000">
-            <button id="build" autocomplete="false"
-                onclick="castFromBits(document.getElementById('hex-bits').value);">Build</button>
+            <button id="build" autocomplete="false">Build</button>
         </details>
         <details>
             <summary>Hexagram Cast Log</summary>
@@ -159,7 +150,7 @@
             <details>
                 <summary>About This Translation</summary>
                 <figure style="float:right;"><img title="Attribution: Bundesarchiv, Bild 146-2006-0022 / CC-BY-SA 3.0"
-                        src="/media/images/richard_wilhelm.jpg" style="height:16rem;">
+                        src="/richard_wilhelm.jpg" style="height:16rem;">
                     <figcaption>Richard Wilhelm</figcaption>
                 </figure>
                 <p>This website hosts an English translation of the I Ching (a.k.a. Yijing, Book of Changes, Classic of
@@ -193,7 +184,7 @@
             </details>
             <details>
                 <summary>About This Website</summary>
-                <figure style="float:right;"><img title="Dan" src="/media/images/dan.jpg" style="height:10rem;">
+                <figure style="float:right;"><img title="Dan" src="/dan.jpg" style="height:10rem;">
                     <figcaption>Dan</figcaption>
                 </figure>
                 <p>This website was created on a whim by a programmer named <a
@@ -313,6 +304,7 @@
         </div>
 
     </main>
+    <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

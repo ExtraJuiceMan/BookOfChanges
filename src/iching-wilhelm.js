@@ -1,4 +1,4 @@
-ICHING = {
+export const BookOfChanges = {
     "1": {
         "hex": 1,
         "hex_font": "䷀",
