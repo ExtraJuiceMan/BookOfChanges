@@ -177,8 +177,6 @@ function castFromBits(bits) {
         return;
     }
 
-    binaryString = bits;
-
     document.getElementById("cast-btn").disabled = true;
     document.getElementById("reset").disabled = false;
 
