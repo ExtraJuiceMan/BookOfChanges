@@ -10,6 +10,11 @@ import { injectBookEntry, injectIndexEntry } from "./build-page";
 
 var castHexagram = undefined;
 var altHexagram = undefined;
+var binaryString = "";
+
+function copyHexagramUrl() {
+    navigator.clipboard.writeText(document.location.origin + "/?code=" + binaryString);
+}
 
 function ensureHexagramInitialized() {
     if (castHexagram === undefined) {
@@ -49,10 +54,9 @@ function updateHexagramNumbers() {
     document.getElementById("future-view").style = "";
     document.getElementById("future-view").href = `#hexagram-${altNum}`;
 
-
-
     document.getElementById("build").disabled = true;
     document.getElementById("cast-btn").disabled = true;
+    document.getElementById("copy-url").disabled = false;
 }
 
 function expandEntryLines() {
@@ -87,13 +91,14 @@ function expandEntryLines() {
     }
 }
 
-function reset() {
+function reset(loaded = true) {
     if (!castHexagram || !altHexagram) {
         updateHexagramNumbers();
         return;
     }
 
     document.getElementById("cast-btn").disabled = true;
+    document.getElementById("copy-url").disabled = true;
     document.getElementById("build").disabled = true;
     document.getElementById("reset").disabled = true;
 
@@ -105,10 +110,17 @@ function reset() {
         altHexagram.svg.node.innerHTML = "";
         castHexagram = undefined;
         altHexagram = undefined;
+        binaryString = "";
+
+        if (!loaded) {
+            window.location.search = new URLSearchParams();
+        }
+
         document.getElementById("cast-log").innerText = "";
         updateHexagramNumbers();
 
         document.getElementById("cast-btn").disabled = false;
+        document.getElementById("copy-url").disabled = true;
         document.getElementById("build").disabled = false;
         document.getElementById("reset").disabled = true;
         document.getElementById("cast-log").innerText = "";
@@ -130,9 +142,15 @@ function cast() {
     document.getElementById("reset").disabled = false;
 
     let castNumber = castHexagramNumber();
-    let value = YARROW_STALK_TABLE[castNumber];
+    addCastNumber(castNumber);
 
-    insertCastLog(castNumber);
+    updateHexagramNumbers();
+}
+
+function addCastNumber(number) {
+    let value = YARROW_STALK_TABLE[number];
+
+    insertCastLog(number);
 
     castHexagram.addLine(value, 250);
 
@@ -144,7 +162,8 @@ function cast() {
 
     altHexagram.addLine(value, 250);
 
-    updateHexagramNumbers();
+    binaryString += number.toString(2).padStart(4, "0");
+    console.log(binaryString);
 }
 
 function castFromBits(bits) {
@@ -158,25 +177,15 @@ function castFromBits(bits) {
         return;
     }
 
+    binaryString = bits;
+
     document.getElementById("cast-btn").disabled = true;
     document.getElementById("reset").disabled = false;
 
     for (let i = 0; i < 24; i += 4) {
         let slice = bits.slice(i, i + 4);
         let num = parseInt(slice, 2);
-        let value = YARROW_STALK_TABLE[num];
-
-        insertCastLog(num);
-
-        castHexagram.addLine(value, 250);
-
-        if (value === YinYang.OLD_YANG) {
-            value = YinYang.YOUNG_YIN;
-        } else if (value === YinYang.OLD_YIN) {
-            value = YinYang.YOUNG_YANG;
-        }
-
-        altHexagram.addLine(value, 250);
+        addCastNumber(num);
     }
 
     updateHexagramNumbers();
@@ -243,6 +252,7 @@ function initializeHeaderHexagrams() {
 function bindEventHandlers() {
     document.getElementById("present-view").addEventListener("click", () => expandEntryLines());
     document.getElementById("reset").addEventListener("click", () => reset());
+    document.getElementById("copy-url").addEventListener("click", () => copyHexagramUrl());
     document.getElementById("cast-btn").addEventListener("click", () => cast());
     document.getElementById("build").addEventListener("click", () => castFromBits(document.getElementById('hex-bits').value));
 }
@@ -270,6 +280,7 @@ function runBuildPageWorker() {
 
                 if (el !== null) {
                     scrollId = "";
+                    
                     el.scrollIntoView({
                         behavior: "smooth",
                         block: "start"
@@ -282,10 +293,21 @@ function runBuildPageWorker() {
     worker.postMessage(null);
 }
 
+function getHexagramBitsFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let code = urlParams.get("code");
+    return code.toString();
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
-    reset();
+    reset(false);
     initializeHeaderHexagrams();
     bindEventHandlers();
     runBuildPageWorker();
+    
+    const code = getHexagramBitsFromUrl();
+    if (code !== null) {
+        castFromBits(code);
+    }
 }, false);
