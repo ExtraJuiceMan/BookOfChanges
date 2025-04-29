@@ -1,4 +1,4 @@
-![taijitu](https://raw.githubusercontent.com/ExtraJuiceMan/BookOfChanges/refs/heads/master/media/images/taijitu.png)
+![taijitu](https://raw.githubusercontent.com/ExtraJuiceMan/BookOfChanges/refs/heads/master/public/taijitu.png)
 
 
 # I Ching - Classic of Changes
@@ -17,7 +17,7 @@ The machine-readable translation of I Ching by Wilhelm/Banes used for this websi
 If there are any issues with the translation, please let me know by opening an issue on this repository. There seem to be a lot of typographical errors at the moment. I myself have fixed dozens of the typographical errors found in the machine-readable translation, but there's a good chance that I haven't caught all of them. In fixing such errors, I used another [digitized version](https://www.wisdomportal.com/IChing/IChing-Wilhelm.html) of Wilhelm's I Ching as a reference.
 
 # Technical Details
-This website was written using Vanilla JS. The hexagram casting script found on this website uses the [Four Coin Method](https://en.wikipedia.org/wiki/I_Ching_divination#Four_coins), which yields identical probabilities as with the classic [Yarrow Stalk Method](https://en.wikipedia.org/wiki/I_Ching_divination#Yarrow_stalks). The hexagram random number generation uses the ``Crypto.getRandomValues()`` API with a fallback to ``Math.random()`` if Crypto is unavailable. The website's stylesheet was created using a heavily modified version of [simple.css](https://github.com/kevquirk/simple.css). The hexagrams are drawn and animated using [SVG.js](https://github.com/svgdotjs/svg.js). The machine-readable I Ching data is templated into HTML using [handlebars.js](https://github.com/handlebars-lang/handlebars.js).
+This website was written using Vanilla JS. The hexagram casting script found on this website uses the [Four Coin Method](https://en.wikipedia.org/wiki/I_Ching_divination#Four_coins), which yields identical probabilities as with the classic [Yarrow Stalk Method](https://en.wikipedia.org/wiki/I_Ching_divination#Yarrow_stalks). The hexagram random number generation uses the ``Crypto.getRandomValues()`` API with a fallback to ``Math.random()`` if Crypto is unavailable. The website's stylesheet was created using a heavily modified version of [simple.css](https://github.com/kevquirk/simple.css). The hexagrams are drawn and animated using [SVG.js](https://github.com/svgdotjs/svg.js). The website is bundled using [Vite](https://github.com/vitejs/vite).
 
 No generative AI was used in the creation of this website--it's all the work of one human!
 
