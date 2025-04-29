@@ -163,7 +163,6 @@ function addCastNumber(number) {
     altHexagram.addLine(value, 250);
 
     binaryString += number.toString(2).padStart(4, "0");
-    console.log(binaryString);
 }
 
 function castFromBits(bits) {
