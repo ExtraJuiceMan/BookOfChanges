@@ -3,7 +3,8 @@
 
 <head>
     <title>I Ching - Classic of Changes</title>
-    <meta name="description" content=" A website serving as a tool to cast hexagrams and consult the I Ching (Yijing, Book of Changes, Classic of Changes) and as a web-format edition of the Richard Wilhelm I Ching translation ">
+    <meta name="description"
+        content=" A website serving as a tool to cast hexagrams and consult the I Ching (Yijing, Book of Changes, Classic of Changes) and as a web-format edition of the Richard Wilhelm I Ching translation ">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -42,8 +43,7 @@
             </div>
             <div class="hexagram-cast-col">
                 <p>◄ Present</p>
-                <p><a id="present-view" style="display:none;">[View]</a> Hexagram <span
-                        id="present-num"></span></p>
+                <p><a id="present-view" style="display:none;">[View]</a> Hexagram <span id="present-num"></span></p>
                 <p>► Future</p>
                 <p><a id="future-view" style="display:none;">[View]</a> Hexagram <span id="future-num"></span></p>
                 <button disabled autocomplete="false" id="reset">Reset</button>
@@ -59,6 +59,26 @@
             <p>Casting a hexagram on this page uses the computer's RNG (random number generator) to build a hexagram.
             </p>
             <button id="cast-btn" autocomplete="false">Cast</button>
+        </details>
+        <details id="section-beacon">
+            <summary>Hexagram from Randomness Beacon</summary>
+            <p>Cast a hexagram using a publicly verifiable source of random bits, in this case from a
+                Cloudflare drand randomness beacon instance (https://drand.cloudflare.com). Any hexagrams cast using
+                this method
+                can be verified to be cast from numbers
+                from a truly random source, since it can be verified that a certain random number was generated at a
+                certain time by querying the drand instance.
+            </p>
+            <div id="randomness-beacon">
+                <button id="get-beacon" autocomplete="false">Get Latest Beacon</button>
+                <button id="verify-beacon" autocomplete="false" style="display:none;">Verify Hexagram</button>
+                <div id="beacon-bits-container" style="display:none;">
+                    <code id="beacon-random-bits" style="color: blue;"></code>
+                    <input style="width: 50%" disabled="true" id="beacon-bits-chosen" type="text" maxlength="24"
+                        minlength="24" pattern="[01]+" placeholder="">
+                    <button id="choose-beacon-bits">Build</button>
+                </div>
+            </div>
         </details>
         <details>
             <summary>Hexagram from Bits (24 Bits)</summary>

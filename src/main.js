@@ -1,19 +1,27 @@
+/* eslint-disable no-unused-vars */
 import "./fonts/normal.woff2";
 import "./fonts/italic.woff2";
 import "./css/style.css";
 
 import Hexagram from "./hexagram";
 import { SVG, Timeline } from "@svgdotjs/svg.js";
-import { castHexagramNumber, getRandomInt } from "./utility";
+import { castHexagramNumber, getUrlParams, getRandomInt, hex2bin, scrollToId } from "./utility";
 import { YinYang, YinYangInvert, YARROW_STALK_TABLE, KING_WEN_SEQ } from "./constants";
 import { injectBookEntry, injectIndexEntry } from "./build-page";
+import { chainInfo as fetchChainInfo, fetchBeacon } from "./drand";
 
 var castHexagram = undefined;
 var altHexagram = undefined;
 var binaryString = "";
+var beaconInfo = null;
+var beaconIndex = 0;
 
 function copyHexagramUrl() {
-    navigator.clipboard.writeText(document.location.origin + "/?code=" + binaryString);
+    let url = `${document.location.origin}/?code=${binaryString}`;
+    if (beaconInfo !== null) {
+        url += `&time=${beaconInfo.time}&index=${beaconIndex}`;
+    }
+    navigator.clipboard.writeText(url);
 }
 
 function ensureHexagramInitialized() {
@@ -27,7 +35,7 @@ function ensureHexagramInitialized() {
         let draw2 = SVG(document.getElementById("cast-alt"))
             .size(240, 240)
             .viewbox(0, 0, 240, 240);
-            
+
         altHexagram = new Hexagram(draw2);
 
         document.getElementById("cast-log").innerText = "";
@@ -57,6 +65,10 @@ function updateHexagramNumbers() {
     document.getElementById("build").disabled = true;
     document.getElementById("cast-btn").disabled = true;
     document.getElementById("copy-url").disabled = false;
+    document.getElementById("get-beacon").disabled = true;
+    document.getElementById("get-beacon").innerText = `Get Latest Beacon`;
+    document.getElementById("choose-beacon-bits").disabled = true;
+    stopBeaconCountdown();
 }
 
 function expandEntryLines() {
@@ -97,10 +109,14 @@ function reset(loaded = true) {
         return;
     }
 
+    stopBeaconCountdown();
     document.getElementById("cast-btn").disabled = true;
     document.getElementById("copy-url").disabled = true;
     document.getElementById("build").disabled = true;
     document.getElementById("reset").disabled = true;
+    document.getElementById("beacon-bits-container").style = "display:none";
+    document.getElementById("get-beacon").disabled = true;
+    document.getElementById("get-beacon").innerText = `Get Latest Beacon`;
 
     let undrawTime = castHexagram.undrawAll(140, new Timeline());
     altHexagram.undrawAll(140, new Timeline());
@@ -124,6 +140,12 @@ function reset(loaded = true) {
         document.getElementById("build").disabled = false;
         document.getElementById("reset").disabled = true;
         document.getElementById("cast-log").innerText = "";
+        document.getElementById("get-beacon").disabled = false;
+        document.getElementById("get-beacon").innerText = `Get Latest Beacon`;
+        document.getElementById("choose-beacon-bits").disabled = false;
+        document.getElementById("beacon-bits-container").style = "display:none;";
+        document.getElementById("beacon-bits-chosen").value = ""; 
+        document.getElementById("verify-beacon").style = "display:none;";
     }, undrawTime);
 }
 
@@ -140,6 +162,12 @@ function cast() {
 
     document.getElementById("build").disabled = true;
     document.getElementById("reset").disabled = false;
+    document.getElementById("get-beacon").disabled = true;
+    document.getElementById("get-beacon").innerText = `Get Latest Beacon`;
+    document.getElementById("beacon-bits-container").style = "display:none";
+    beaconInfo = null;
+    stopBeaconCountdown();
+    stopBeaconBitsChoice();
 
     let castNumber = castHexagramNumber();
     addCastNumber(castNumber);
@@ -246,12 +274,139 @@ function initializeHeaderHexagrams() {
 
 }
 
+let beaconBitsChoiceIntervalId = null;
+let beaconCountdownIntervalId = null;
+
+function setBeaconBits(bin) {
+    document.getElementById("beacon-random-bits").innerHTML = "";
+
+    for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 32; j++) {
+            document.getElementById("beacon-random-bits").innerHTML += `<span>${bin.charAt(i * 16 + j)}</span>`;
+        }
+        document.getElementById("beacon-random-bits").innerHTML += `<br/>`;
+    }
+}
+
+function getBeacon() {
+    const nowMs = Date.now();
+    document.getElementById("get-beacon").disabled = true;
+    document.getElementById("get-beacon").innerText = `Get Latest Beacon (Fetching)`;
+
+    fetchChainInfo((chainInfo) => {
+        fetchBeacon(nowMs, (beacon) => {
+            beaconInfo = { time: nowMs, beacon };
+            const untilNextAvailable = (chainInfo.genesis_time * 1000) + (beacon.round) * (chainInfo.period * 1000);
+            const untilNextDelta = untilNextAvailable - Date.now();
+            const randomBin = hex2bin(beacon.randomness);
+
+            setBeaconBits(randomBin);
+
+            document.getElementById("beacon-bits-container").style = "";
+            document.getElementById("choose-beacon-bits").disabled = false;
+            startBeaconBitsChoice();
+
+            if (untilNextDelta > 0) {
+                document.getElementById("get-beacon").innerText = `Get Latest Beacon (${(untilNextDelta / 1000).toFixed()}s)`;
+                beaconCountdownIntervalId = setInterval(() => {
+                    let nextDelta = untilNextAvailable - Date.now();
+                    if (nextDelta > 0) {
+                        document.getElementById("get-beacon").innerText = `Get Latest Beacon (${(nextDelta / 1000).toFixed()}s)`;
+                    } else {
+                        document.getElementById("get-beacon").disabled = false;
+                        document.getElementById("get-beacon").innerText = "Get Latest Beacon";
+                        clearInterval(beaconCountdownIntervalId);
+                    }
+                }, 1000);
+            } else {
+                document.getElementById("get-beacon").disabled = false;
+            }
+        });
+    });
+}
+
+function getBeaconBitsAt(bits, index) {
+    let string = "";
+    for (let i = 0; i < 24; i++) {
+        string += bits[(index + i) % 256].innerText;
+    }
+    return string;
+}
+
+function chooseBeaconBits() {
+    stopBeaconBitsChoice();
+    let selectedBits = document.getElementById("beacon-random-bits").querySelectorAll("span[selected]");
+    let string = "";
+    for (let i = 0; i < selectedBits.length; i++) {
+        string += selectedBits[i].innerText;
+    }
+    document.getElementById("choose-beacon-bits").disabled = true;
+    document.getElementById("beacon-bits-chosen").value = string; 
+    castFromBits(string);
+}
+
+function stopBeaconCountdown() {
+    if (beaconCountdownIntervalId !== null) {
+        clearInterval(beaconCountdownIntervalId);
+        beaconCountdownIntervalId = null;
+    }
+}
+
+function stopBeaconBitsChoice() {
+    if (beaconBitsChoiceIntervalId !== null) {
+        clearInterval(beaconBitsChoiceIntervalId);
+        beaconBitsChoiceIntervalId = null;
+    }
+}
+
+function highlightBitsAt(bits, index, color) {
+    for (let i = 0; i < 24; i++) {
+        bits[(index + i) % 256].setAttribute("selected", "true");
+        bits[(index + i) % 256].style = `background-color: ${color}`;
+    }
+}
+
+function startBeaconBitsChoice() {
+    stopBeaconBitsChoice();
+
+    beaconIndex = getRandomInt(256);
+
+    beaconBitsChoiceIntervalId = setInterval(() => {
+        beaconIndex = (beaconIndex + 1) % 256;
+        let bits = document.getElementById("beacon-random-bits").querySelectorAll("span");
+        for (let i = 0; i < bits.length; i++) {
+            bits[i].removeAttribute("selected");
+            bits[i].style = "";
+        }
+
+        highlightBitsAt(bits, beaconIndex, "yellow");
+    }, 5);
+}
+
+function verifyBeaconHexagram() {
+    document.getElementById("verify-beacon").disabled = true;
+    fetchBeacon(beaconInfo.time, (beacon) => {
+        setBeaconBits(hex2bin(beacon.randomness));
+        const bits = document.getElementById("beacon-random-bits").querySelectorAll("span");
+        const bitsAtIndex = getBeaconBitsAt(bits, beaconIndex);
+        const color = bitsAtIndex === binaryString ? "lime" : "red";
+        highlightBitsAt(bits, beaconIndex, color);
+    });
+}
+
 function bindEventHandlers() {
     document.getElementById("present-view").addEventListener("click", () => expandEntryLines());
     document.getElementById("reset").addEventListener("click", () => reset());
     document.getElementById("copy-url").addEventListener("click", () => copyHexagramUrl());
     document.getElementById("cast-btn").addEventListener("click", () => cast());
-    document.getElementById("build").addEventListener("click", () => castFromBits(document.getElementById('hex-bits').value));
+    document.getElementById("get-beacon").addEventListener("click", () => getBeacon());
+    document.getElementById("choose-beacon-bits").addEventListener("click", () => chooseBeaconBits());
+    document.getElementById("build").addEventListener("click", () => {
+        beaconInfo = null;
+        castFromBits(document.getElementById('hex-bits').value);
+    });
+    document.getElementById("verify-beacon").addEventListener("click", () => verifyBeaconHexagram());
+
 }
 
 function runBuildPageWorker() {
@@ -259,7 +414,7 @@ function runBuildPageWorker() {
         type: "module"
     });
 
-    let scrollId = window.location.hash;
+    let scrollId = window.location.hash.substring(1);
 
     worker.addEventListener("message", e => {
         //injectBookEntries(e.data.entries);
@@ -272,28 +427,13 @@ function runBuildPageWorker() {
         if (e.data.type === "book") {
             injectBookEntry(e.data.entry);
 
-            if (scrollId !== "") {
-                let el = document.getElementById(scrollId.substring(1));
-
-                if (el !== null) {
-                    scrollId = "";
-                    
-                    el.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                }
+            if (scrollId !== "" && scrollToId(scrollId)) {
+                scrollId = "";
             }
         }
     });
 
     worker.postMessage(null);
-}
-
-function getHexagramBitsFromUrl() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let code = urlParams.get("code");
-    return code ?? code.toString();
 }
 
 
@@ -302,9 +442,19 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeHeaderHexagrams();
     bindEventHandlers();
     runBuildPageWorker();
-    
-    const code = getHexagramBitsFromUrl();
-    if (code !== null) {
-        castFromBits(code);
+
+    const params = getUrlParams();
+    if (params.code !== null) {
+        castFromBits(params.code);
+
+        if (params.time !== null && params.index !== null) {
+            document.getElementById("section-beacon").setAttribute("open", "true");
+            document.getElementById("verify-beacon").style = "";
+            document.getElementById("beacon-bits-container").style = "";
+            document.getElementById("beacon-bits-chosen").value = params.code;
+            beaconInfo = {time: params.time};
+            beaconIndex = params.index;
+
+        }
     }
 }, false);
