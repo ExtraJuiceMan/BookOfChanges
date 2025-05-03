@@ -16,12 +16,16 @@ var binaryString = "";
 var beaconInfo = null;
 var beaconIndex = 0;
 
-function copyHexagramUrl() {
-    let url = `${document.location.origin}/?code=${binaryString}`;
+function getHexagramQuery() {
+    let url = `?code=${binaryString}`;
     if (beaconInfo !== null) {
         url += `&time=${beaconInfo.time}&index=${beaconIndex}`;
     }
-    navigator.clipboard.writeText(url);
+    return url;
+}
+
+function copyHexagramUrl() {
+    navigator.clipboard.writeText(`${document.location.origin}/${getHexagramQuery()}`);
 }
 
 function ensureHexagramInitialized() {
@@ -115,6 +119,7 @@ function reset(loaded = true) {
     document.getElementById("build").disabled = true;
     document.getElementById("reset").disabled = true;
     document.getElementById("beacon-bits-container").style = "display:none";
+    document.getElementById("beacon-url-verification").style = "display:none;";
     document.getElementById("get-beacon").disabled = true;
     document.getElementById("get-beacon").innerText = `Get Latest Beacon`;
 
@@ -145,7 +150,6 @@ function reset(loaded = true) {
         document.getElementById("choose-beacon-bits").disabled = false;
         document.getElementById("beacon-bits-container").style = "display:none;";
         document.getElementById("beacon-bits-chosen").value = ""; 
-        document.getElementById("verify-beacon").style = "display:none;";
     }, undrawTime);
 }
 
@@ -278,14 +282,11 @@ let beaconBitsChoiceIntervalId = null;
 let beaconCountdownIntervalId = null;
 
 function setBeaconBits(bin) {
-    document.getElementById("beacon-random-bits").innerHTML = "";
-
+    let lines = [];
     for (let i = 0; i < 8; i++) {
-        for (let j = 0; j < 32; j++) {
-            document.getElementById("beacon-random-bits").innerHTML += `<span>${bin.charAt(i * 16 + j)}</span>`;
-        }
-        document.getElementById("beacon-random-bits").innerHTML += `<br/>`;
+        lines.push([...bin.substring(i * 32, i * 32 + 32)].map(x => `<span>${x}</span>`).join(""));
     }
+    document.getElementById("beacon-random-bits").innerHTML = lines.join("<br/>");
 }
 
 function getBeacon() {
@@ -446,12 +447,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (params.time !== null && params.index !== null) {
             document.getElementById("section-beacon").setAttribute("open", "true");
-            document.getElementById("verify-beacon").style = "";
+            document.getElementById("beacon-url-verification").style = "";
             document.getElementById("beacon-bits-container").style = "";
+            setBeaconBits(Array(256).fill("*").join(""));
             document.getElementById("beacon-bits-chosen").value = params.code;
             beaconInfo = {time: params.time};
             beaconIndex = params.index;
-
+            document.getElementById("beacon-url-details").innerHTML = 
+                `URL: <a href="${document.location.origin}/${getHexagramQuery()}">${getHexagramQuery()}</a><br/>
+                Unverified Bits: ${params.code}<br/>
+                Bits Selected: bit ${params.index} - bit ${(params.index + 24) % 256}<br/>
+                Beacon Fetched: ${new Date(params.time)}`;
         }
     }
 }, false);
