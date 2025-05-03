@@ -303,8 +303,13 @@ function getBeacon() {
 
             setBeaconBits(randomBin);
 
+            const roundUrl = `https://drand.cloudflare.com/public/${beacon.round}`;
+            const beaconGenerated = new Date((chainInfo.genesis_time * 1000) + (beacon.round - 1) * (chainInfo.period * 1000));
+
             document.getElementById("beacon-bits-container").style = "";
             document.getElementById("choose-beacon-bits").disabled = false;
+            document.getElementById("beacon-info-details").innerHTML = `Round Generated: ${beaconGenerated}<br/>Round URL: <a href=${roundUrl}>${roundUrl}</a>`;
+
             startBeaconBitsChoice();
 
             if (untilNextDelta > 0) {
@@ -383,13 +388,22 @@ function startBeaconBitsChoice() {
 
 function verifyBeaconHexagram() {
     document.getElementById("verify-beacon").disabled = true;
-    fetchBeacon(beaconInfo.time, (beacon) => {
-        setBeaconBits(hex2bin(beacon.randomness));
-        const bits = document.getElementById("beacon-random-bits").querySelectorAll("span");
-        const bitsAtIndex = getBeaconBitsAt(bits, beaconIndex);
-        const color = bitsAtIndex === binaryString ? "lime" : "red";
-        highlightBitsAt(bits, beaconIndex, color);
+    
+    fetchChainInfo((chainInfo) => {
+        fetchBeacon(beaconInfo.time, (beacon) => {
+            const roundUrl = `https://drand.cloudflare.com/public/${beacon.round}`;
+            const beaconGenerated = new Date((chainInfo.genesis_time * 1000) + (beacon.round - 1) * (chainInfo.period * 1000));
+            document.getElementById("beacon-info-details").innerHTML = `Round Generated: ${beaconGenerated}<br/>Round URL: <a href=${roundUrl}>${roundUrl}</a>`;
+            document.getElementById("beacon-bits-container").style = "";
+            setBeaconBits(hex2bin(beacon.randomness));
+
+            const bits = document.getElementById("beacon-random-bits").querySelectorAll("span");
+            const bitsAtIndex = getBeaconBitsAt(bits, beaconIndex);
+            const color = bitsAtIndex === binaryString ? "lime" : "red";
+            highlightBitsAt(bits, beaconIndex, color);
+        });
     });
+    
 }
 
 function bindEventHandlers() {
@@ -448,11 +462,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (params.time !== null && params.index !== null) {
             document.getElementById("section-beacon").setAttribute("open", "true");
             document.getElementById("beacon-url-verification").style = "";
-            document.getElementById("beacon-bits-container").style = "";
-            setBeaconBits(Array(256).fill("*").join(""));
-            document.getElementById("beacon-bits-chosen").value = params.code;
             beaconInfo = {time: params.time};
             beaconIndex = params.index;
+            document.getElementById("beacon-bits-chosen").value = params.code;
             document.getElementById("beacon-url-details").innerHTML = 
                 `URL: <a href="${document.location.origin}/${getHexagramQuery()}">${getHexagramQuery()}</a><br/>
                 Unverified Bits: ${params.code}<br/>
