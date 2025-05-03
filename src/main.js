@@ -330,7 +330,6 @@ function getBeaconBitsAt(bits, index) {
     for (let i = 0; i < 24; i++) {
         string += bits[(index + i) % 256].innerText;
     }
-    console.log(string);
     return string;
 }
 
