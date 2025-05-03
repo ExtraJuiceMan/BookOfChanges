@@ -330,16 +330,14 @@ function getBeaconBitsAt(bits, index) {
     for (let i = 0; i < 24; i++) {
         string += bits[(index + i) % 256].innerText;
     }
+    console.log(string);
     return string;
 }
 
 function chooseBeaconBits() {
     stopBeaconBitsChoice();
-    let selectedBits = document.getElementById("beacon-random-bits").querySelectorAll("span[selected]");
-    let string = "";
-    for (let i = 0; i < selectedBits.length; i++) {
-        string += selectedBits[i].innerText;
-    }
+    const string = getBeaconBitsAt(document.getElementById("beacon-random-bits").querySelectorAll("span"),
+        beaconIndex);
     document.getElementById("choose-beacon-bits").disabled = true;
     document.getElementById("beacon-bits-chosen").value = string; 
     castFromBits(string);
@@ -380,7 +378,7 @@ function startBeaconBitsChoice() {
         }
 
         highlightBitsAt(bits, beaconIndex, "yellow");
-    }, 5);
+    }, 4);
 }
 
 function verifyBeaconHexagram() {
