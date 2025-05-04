@@ -1,5 +1,5 @@
 import { BookOfChanges } from "./iching-wilhelm";
-import { buildBookEntries, buildBookIndex } from "./build-page";
+import { buildBookEntries, buildBookIndex } from "./app/build-page";
 
 addEventListener("message", e => {
     const entries = buildBookEntries(BookOfChanges, (entry) => {

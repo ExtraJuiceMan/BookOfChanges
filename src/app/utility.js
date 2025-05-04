@@ -9,29 +9,6 @@ export function toTitleCase(str) {
     );
 }
 
-export function getUrlParams() {
-    const urlParams = new URLSearchParams(window.location.search);
-    let code = urlParams.get("code");
-
-    if (code !== null) {
-        code = code.toString();
-    }
-
-    let time = urlParams.get("time");
-
-    if (time !== null) {
-        time = parseInt(time);
-    }
-    
-    let index = urlParams.get("index");
-
-    if (index !== null) {
-        index = parseInt(index);
-    }
-
-    return { code, time, index };
-}
-
 export function scrollToId(id) {
     let el = document.getElementById(id);
 
@@ -89,4 +66,16 @@ export function castHexagramNumber() {
     }
 
     return num;
+}
+
+export function disabledIf(condition) {
+    return condition ? "disabled" : "";
+}
+
+export function displayNoneIf(condition) {
+    return condition ? "display: none;" : "";
+}
+
+export function castedNumbersToBitString(numbers) {
+    return numbers.map(x => x.toString(2).padStart(4, "0")).join("");
 }

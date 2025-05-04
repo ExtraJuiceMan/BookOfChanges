@@ -41,13 +41,7 @@
             <div class="hexagram-cast-col">
                 <svg id="cast" class="cast-hexagram-svg"></svg>
             </div>
-            <div class="hexagram-cast-col">
-                <p>◄ Present</p>
-                <p><a id="present-view" style="display:none;">[View]</a> Hexagram <span id="present-num"></span></p>
-                <p>► Future</p>
-                <p><a id="future-view" style="display:none;">[View]</a> Hexagram <span id="future-num"></span></p>
-                <button disabled autocomplete="false" id="reset">Reset</button>
-                <button disabled autocomplete="false" id="copy-url">Copy URL</button>
+            <div class="hexagram-cast-col" id="cast-top-mount">
             </div>
             <div class="hexagram-cast-col">
                 <svg id="cast-alt" class="cast-hexagram-svg"></svg>
@@ -58,7 +52,8 @@
             <summary>Cast a Hexagram (RNG)</summary>
             <p>Casting a hexagram on this page uses the computer's RNG (random number generator) to build a hexagram.
             </p>
-            <button id="cast-btn" autocomplete="false">Cast</button>
+            <div id="cast-bottom-mount">
+            </div>
         </details>
         <details id="section-beacon">
             <summary>Hexagram from Randomness Beacon</summary>
@@ -69,28 +64,7 @@
                 from a truly random source, since it can be verified that a certain random number was generated at a
                 certain time by querying the drand instance.
             </p>
-            <div id="randomness-beacon">
-                <button id="get-beacon" autocomplete="false">Get Latest Beacon</button>
-                <div id="beacon-url-verification" style="display:none;">
-                    <hr>
-                    <b>Beacon Hexagram URL Verification</b>
-                    <p style="margin-top: 0rem; margin-bottom: 0rem;" id="beacon-url-details">
-                    </p>
-                    <button id="verify-beacon" autocomplete="false" style="margin-top: 0.5rem;">Verify Hexagram</button>
-                </div>
-                <div id="beacon-bits-container" style="display:none;">
-                    <hr>
-                    <b>Randomness Beacon Information</b>
-                    <br />
-                    <code id="beacon-random-bits" style="color: blue;"></code>
-                    <br />
-                    <input style="width: 50%; margin-top: 0.5rem;" disabled="true" id="beacon-bits-chosen" type="text"
-                        maxlength="24" minlength="24" pattern="[01]+" placeholder="">
-                    <button id="choose-beacon-bits">Build</button>
-                    <p style="margin-top: 0rem; margin-bottom: 0rem;" id="beacon-info-details"></p>
-
-                </div>
-            </div>
+            <div id="cast-beacon-mount"></div>
         </details>
         <details>
             <summary>Hexagram from Bits (24 Bits)</summary>
@@ -102,14 +76,12 @@
             <a href="https://www.random.org/bytes/">random.org: Random Numbers from Atmospheric Noise</a>
             <br />
             <br />
-            <input style="width: 50%" id="hex-bits" type="text" maxlength="24" minlength="24" pattern="[01]+"
-                placeholder="100010001001100110001000">
-            <button id="build" autocomplete="false">Build</button>
+            <div id="cast-bits-mount"></div>
         </details>
         <details>
             <summary>Hexagram Cast Log</summary>
             <p>A log of the hexagram's lines will appear in this box when it is cast.</p>
-            <p id="cast-log"></p>
+            <div id="cast-log-mount"></div>
         </details>
         <details>
             <summary>Formulating a Question</summary>

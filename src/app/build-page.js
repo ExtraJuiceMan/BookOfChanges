@@ -1,7 +1,34 @@
 import Hexagram from "./hexagram";
 import { SVG } from "@svgdotjs/svg.js";
-import { TemplateBookEntry, TemplateIndexEntry } from "./template";
+import { TemplateBookEntry, TemplateIndexEntry } from "../components/iching-template";
 import { toTitleCase } from "./utility";
+
+export function runBuildPageWorker() {
+    const worker = new Worker(new URL("./build-page-worker.js", import.meta.url), {
+        type: "module"
+    });
+
+    let scrollId = window.location.hash.substring(1);
+
+    worker.addEventListener("message", e => {
+        //injectBookEntries(e.data.entries);
+        //injectIndexEntries(e.data.index);
+
+        if (e.data.type === "index") {
+            injectIndexEntry(e.data.entry);
+        }
+
+        if (e.data.type === "book") {
+            injectBookEntry(e.data.entry);
+
+            if (scrollId !== "" && scrollToId(scrollId)) {
+                scrollId = "";
+            }
+        }
+    });
+
+    worker.postMessage(null);
+}
 
 export function buildBookIndex(book, callback) {
     let indexEntries = [];

@@ -1,0 +1,46 @@
+import { reactive } from "@arrow-js/core";
+import { AppStates } from "./constants";
+import { CastState } from "./cast-state";
+
+export const castState = new CastState();
+
+export const castInfo = new reactive({
+    presentHexagramNumber: null,
+    futureHexagramNumber: null,
+});
+
+export function setCastInfo(presentNum, futureNum) {
+    castInfo.presentHexagramNumber = presentNum;
+    castInfo.futureHexagramNumber = futureNum;
+}
+
+export function resetCastInfo() {
+    castInfo.presentHexagramNumber = null;
+    castInfo.futureHexagramNumber = null;
+}
+
+export const appData = reactive({
+    appState: AppStates.READY,
+    castNums: [],
+});
+
+export function resetAppData() {
+    appData.appState = AppStates.READY;
+    appData.castNums = [];
+}
+
+export const beaconState = reactive({
+    chainInfo: null,
+    currentBeacon: null,
+    beaconTime: 0,
+    beaconFetchTime: 0,
+    beaconIndex: 0,
+});
+
+export function resetBeaconState() {
+    beaconState.chainInfo = null;
+    beaconState.currentBeacon = null;
+    beaconState.beaconTime = 0;
+    beaconState.beaconFetchTime = 0;
+    beaconState.beaconIndex = 0;
+}

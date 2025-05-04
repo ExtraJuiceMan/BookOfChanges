@@ -1,4 +1,4 @@
-import { Timeline } from "@svgdotjs/svg.js";
+import { Timeline, SVG } from "@svgdotjs/svg.js";
 import { HEXAGRAM_LINES, YinYang } from "./constants";
 
 export default class Hexagram {
@@ -17,6 +17,12 @@ export default class Hexagram {
                 }
             }
         }
+    }
+
+    static createFromNode(element, viewboxX, viewboxY, sizeX=240, sizeY=240) {
+        return new Hexagram(SVG(element)
+            .size(sizeX, sizeY)
+            .viewbox(0, 0, viewboxX, viewboxY));
     }
 
     getBinaryCode() {
@@ -135,6 +141,11 @@ export default class Hexagram {
         }
 
         return this.getLineLength() * animateTime;
+    }
+
+    resetLines() {
+        this.lines = [];
+        this.linesSvg = [];
     }
 
     drawLine(lineIndex, type, animationTime = 0, timeline = undefined) {

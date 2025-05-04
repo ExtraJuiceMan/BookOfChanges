@@ -8,10 +8,11 @@ const options = {
     noCache: false, // `true` disables caching when retrieving beacons for some providers
     chainVerificationParams: { chainHash, publicKey }  // these are optional, but recommended! They are compared for parity against the `/info` output of a given node
 };
-const chain = new HttpCachingChain("https://drand.cloudflare.com", options);
-const client = new HttpChainClient(chain, options, {userAgent: null, headers: null});
 
-export function fetchBeacon(unixMs, callback) {
+const chain = new HttpCachingChain("https://drand.cloudflare.com", options);
+const client = new HttpChainClient(chain, options, { userAgent: null, headers: null });
+
+export function beaconInfo(unixMs, callback) {
     fetchBeaconByTime(client, unixMs).then((value) => callback(value));
 }
 

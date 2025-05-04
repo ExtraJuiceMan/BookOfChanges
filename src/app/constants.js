@@ -1,3 +1,12 @@
+export const AppStates = Object.freeze({
+    READY: Symbol("ready"),
+    RESETTING: Symbol("resetting"),
+    CASTING_RNG: Symbol("casting_rng"),
+    CAST_FINISH: Symbol("cast_finish"),
+    CAST_FINISH_BEACON: Symbol("cast_finish_beacon"),
+    FROM_BEACON_URL: Symbol("from_beacon_url"),
+});
+
 export const YinYang = Object.freeze({
     OLD_YIN: Symbol("old yin (6)"),
     YOUNG_YIN: Symbol("young yin (8)"),
