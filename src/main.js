@@ -199,3 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
     createHeaderHexagrams();
     processUrlParams();
 }, false);
+
+window.getShareURL = () => {
+    return "https://h.classicofchanges.com/" + appData.castNumbers.map(x => x.toString(16)).join("");
+}
