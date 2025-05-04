@@ -150,6 +150,10 @@ function createHeaderHexagrams() {
 }
 
 function mountComponents() {
+    // Clear dummy components on mount
+    document.getElementById("cast-top-mount").innerHTML = "";
+    document.getElementById("cast-bottom-mount").innerHTML = "";
+
     castTop(document.getElementById("cast-top-mount"));
     castBottom(document.getElementById("cast-bottom-mount"));
     castBeacon(document.getElementById("cast-beacon-mount"));
