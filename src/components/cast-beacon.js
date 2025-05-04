@@ -97,7 +97,7 @@ function verifyBeaconHexagram() {
 
             const bits = document.getElementById("beacon-random-bits").querySelectorAll("span");
             const bitsAtIndex = getBeaconBitsAt(bits, beaconState.beaconIndex);
-            const color = bitsAtIndex === castedNumbersToBitString(appData.castNums) ? "lime" : "red";
+            const color = bitsAtIndex === castedNumbersToBitString(appData.castNumbers) ? "lime" : "red";
             highlightBeaconBitsAt(bits, beaconState.beaconIndex, color);
         });
     });
@@ -150,7 +150,7 @@ function getBeaconInfoText() {
 function getVerifyInfoText() {
     return html`<p style="margin-top: 0rem; margin-bottom: 0rem;" id="beacon-url-details">
     URL: <a href="${() => document.location.origin + "/" + getHexagramQuery()}">${() => getHexagramQuery()}</a><br/>
-                Unverified Bits: ${() => castedNumbersToBitString(appData.castNums)}<br/>
+                Unverified Bits: ${() => castedNumbersToBitString(appData.castNumbers)}<br/>
                 Bits Selected: bit ${() => beaconState.beaconIndex} - bit ${() => (beaconState.beaconIndex + 24) % 256}<br/>
                 Beacon Fetched: ${new Date(beaconState.beaconTime)}
     </p>`;
@@ -178,7 +178,7 @@ style="${() => displayNoneIf(![AppStates.READY, AppStates.FROM_BEACON_URL, AppSt
     <br />
 
     <input style="width: 50%; margin-top: 0.5rem;" disabled="true" id="beacon-bits-chosen" type="text"
-        maxlength="24" minlength="24" pattern="[01]+" placeholder="" value="${() => castedNumbersToBitString(appData.castNums)}">
+        maxlength="24" minlength="24" pattern="[01]+" placeholder="" value="${() => castedNumbersToBitString(appData.castNumbers)}">
 
     <button id="choose-beacon-bits" disabled="${() => appData.appState != AppStates.READY}" @click="${() => chooseBeaconBits()}">Build</button>
 

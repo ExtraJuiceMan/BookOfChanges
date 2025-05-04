@@ -15,7 +15,7 @@ import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, se
 import { stopBeaconBitsChoice, stopBeaconCountdown } from "./components/cast-beacon";
 
 export function getHexagramQuery() {
-    let url = `?code=${castedNumbersToBitString(appData.castNums)}`;
+    let url = `?code=${castedNumbersToBitString(appData.castNumbers)}`;
     if (beaconState.beaconTime !== 0) {
         url += `&time=${beaconState.beaconTime}&index=${beaconState.beaconIndex}`;
     }
@@ -62,6 +62,15 @@ export function expandEntryLines() {
     }
 }
 
+function pushCast(number) {
+    if (castState.isComplete()) {
+        return;
+    }
+
+    appData.castNumbers.push(number);
+    castState.addCast(number, 250);
+}
+
 export function reset() {
     stopBeaconBitsChoice();
     stopBeaconCountdown();
@@ -69,7 +78,7 @@ export function reset() {
     resetBeaconState();
     resetCastInfo();
 
-    window.history.replaceState(null, "", window.location.pathname);
+    window.history.replaceState(null, "", document.location.origin);
 
     appData.appState = AppStates.RESETTING;
     const undrawTime = castState.resetHexagrams(150);
@@ -97,15 +106,6 @@ export function cast() {
             KING_WEN_SEQ.indexOf(castState.futureHexagram().getBinaryCode()) + 1);
         setHexagramUrl();
     }
-}
-
-function pushCast(number) {
-    if (castState.isComplete()) {
-        return;
-    }
-
-    appData.castNums.push(number);
-    castState.addCast(number, 250);
 }
 
 export function castFromBitString(bits) {
@@ -185,6 +185,7 @@ function processUrlParams() {
 
 document.addEventListener('DOMContentLoaded', function () {
     runBuildPageWorker();
+    mountComponents();
 
     castState.initializeHexagrams(
         document.getElementById("cast"),
@@ -192,6 +193,5 @@ document.addEventListener('DOMContentLoaded', function () {
         240, 240);
 
     createHeaderHexagrams();
-    mountComponents();
     processUrlParams();
 }, false);

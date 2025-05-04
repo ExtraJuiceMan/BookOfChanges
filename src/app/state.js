@@ -21,12 +21,12 @@ export function resetCastInfo() {
 
 export const appData = reactive({
     appState: AppStates.READY,
-    castNums: [],
+    castNumbers: [],
 });
 
 export function resetAppData() {
     appData.appState = AppStates.READY;
-    appData.castNums = [];
+    appData.castNumbers = [];
 }
 
 export const beaconState = reactive({

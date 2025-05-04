@@ -4,7 +4,7 @@ import { TemplateBookEntry, TemplateIndexEntry } from "../components/iching-temp
 import { toTitleCase } from "./utility";
 
 export function runBuildPageWorker() {
-    const worker = new Worker(new URL("./build-page-worker.js", import.meta.url), {
+    const worker = new Worker(new URL("../build-page-worker.js", import.meta.url), {
         type: "module"
     });
 
