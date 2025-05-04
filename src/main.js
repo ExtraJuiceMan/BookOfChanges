@@ -204,7 +204,7 @@ window.getShareURL = () => {
     let url = appData.castNumbers.map(x => x.toString(16)).join("");
 
     if (beaconState.beaconTime !== 0) {
-        url += `${beaconState.beaconIndex.toString(16)}${beaconState.beaconTime.toString(16)}`;
+        url += `${beaconState.beaconIndex.toString(16).padStart(2, "0")}${beaconState.beaconTime.toString(16)}`;
     }
 
     return "https://h.classicofchanges.com/" + url.toUpperCase();
