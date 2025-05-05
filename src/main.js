@@ -197,7 +197,7 @@ function processUrlParams() {
 let lookupHexagram = null;
 
 function onLineClicked(hexagram, index) {
-    const node = hexagram.setLine(index, YinYangInvert[hexagram.lines[index]], 120);
+    const node = hexagram.setLine(index, YinYangInvert[hexagram.lines[index]], 180);
     setTimeout(() => {
         node.click(() => onLineClicked(hexagram, index));
         for (let value of Object.values(ICHING_COMPACT)) {
@@ -206,7 +206,7 @@ function onLineClicked(hexagram, index) {
                 break;
             }
         }
-    }, 240);
+    }, 360);
 }
 
 
@@ -215,8 +215,6 @@ function createLookupHexagram(svgNode) {
     for (let i = 0; i < lookupHexagram.linesSvg.length; i++) {
         const line = lookupHexagram.linesSvg[i];
         line.click(() => onLineClicked(lookupHexagram, i));
-        console.log(line);
-
     } 
 }
 
