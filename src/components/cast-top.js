@@ -1,6 +1,6 @@
 import { html } from "@arrow-js/core";
 import { displayNoneIf } from "../app/utility";
-import { appData, castInfo, secretShare } from "../app/state";
+import { appData, castInfo, getSecretShare } from "../app/state";
 import { AppStates } from "../app/constants";
 import { copyHexagramUrl, expandEntryLines, reset } from "../main";
 
@@ -28,4 +28,5 @@ export const castTop = html`
 </p>
 <button disabled="${() => !isFinished() && appData.appState !== AppStates.CASTING_RNG}" @click="${reset}" autocomplete="false" id="reset">Reset</button>
 <button disabled="${() => !isFinished()}" @click="${copyHexagramUrl}"autocomplete="false" id="copy-url"
-style="${secretShare ? "color:red" : ""}">Copy URL</button>`;
+onMouseOver="${() => getSecretShare() ? "this.style['background-color'] = 'red';" : ""}"
+onMouseOut="${() => getSecretShare() ? "this.style['background-color'] = null;" : ""}">Copy URL</button>`;

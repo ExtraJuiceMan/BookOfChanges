@@ -11,7 +11,7 @@ import { castBottom } from "./components/cast-bottom";
 import { castBeacon } from "./components/cast-beacon";
 import { castBits } from "./components/cast-bits";
 import { castLog } from "./components/cast-log";
-import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, setCastInfo, castState, secretShare } from "./app/state";
+import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, setCastInfo, castState, getSecretShare, setSecretShare } from "./app/state";
 import { stopBeaconBitsChoice, stopBeaconCountdown } from "./components/cast-beacon";
 
 export function getHexagramQuery() {
@@ -23,7 +23,7 @@ export function getHexagramQuery() {
 }
 
 export function copyHexagramUrl() {
-    if (secretShare) {
+    if (getSecretShare()) {
         navigator.clipboard.writeText(getShareURL());
         return;
     }
@@ -205,7 +205,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.addEventListener("keypress", function onEvent(event) {
         if (event.key === "h") {
-            secretShare = true;
+            console.log("Enabled secret URL share");
+            setSecretShare(true);
         }
     });
 }, false);

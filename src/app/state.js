@@ -2,7 +2,15 @@ import { reactive } from "@arrow-js/core";
 import { AppStates } from "./constants";
 import { CastState } from "./cast-state";
 
-export let secretShare = false;
+let secretShare = reactive({value: false});
+
+export function setSecretShare(val) {
+    secretShare.value = val;
+}
+
+export function getSecretShare() {
+    return secretShare.value;
+}
 
 export const castState = new CastState();
 
