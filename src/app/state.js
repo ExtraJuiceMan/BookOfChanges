@@ -2,6 +2,8 @@ import { reactive } from "@arrow-js/core";
 import { AppStates } from "./constants";
 import { CastState } from "./cast-state";
 
+export let secretShare = false;
+
 export const castState = new CastState();
 
 export const castInfo = new reactive({

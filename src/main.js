@@ -11,7 +11,7 @@ import { castBottom } from "./components/cast-bottom";
 import { castBeacon } from "./components/cast-beacon";
 import { castBits } from "./components/cast-bits";
 import { castLog } from "./components/cast-log";
-import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, setCastInfo, castState } from "./app/state";
+import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, setCastInfo, castState, secretShare } from "./app/state";
 import { stopBeaconBitsChoice, stopBeaconCountdown } from "./components/cast-beacon";
 
 export function getHexagramQuery() {
@@ -202,15 +202,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     createHeaderHexagrams();
     processUrlParams();
+
+    document.addEventListener("keypress", function onEvent(event) {
+        if (event.key === "h") {
+            secretShare = true;
+        }
+    });
 }, false);
-
-export let secretShare = false;
-
-document.addEventListener("keypress", function onEvent(event) {
-    if (event.key === "h") {
-        secretShare = true;
-    }
-});
 
 function getShareURL () {
     let url = appData.castNumbers.map(x => x.toString(16)).join("");

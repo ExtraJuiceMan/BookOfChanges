@@ -1,8 +1,8 @@
 import { html } from "@arrow-js/core";
-import { disabledIf, displayNoneIf } from "../app/utility";
-import { appData, castInfo } from "../app/state";
+import { displayNoneIf } from "../app/utility";
+import { appData, castInfo, secretShare } from "../app/state";
 import { AppStates } from "../app/constants";
-import { copyHexagramUrl, expandEntryLines, reset, secretShare } from "../main";
+import { copyHexagramUrl, expandEntryLines, reset } from "../main";
 
 const finishedStates = [AppStates.FROM_BEACON_URL, AppStates.CAST_FINISH, AppStates.CAST_VERIFY, AppStates.CAST_FINISH_BEACON];
 const unknownText = "「 ? 」";
