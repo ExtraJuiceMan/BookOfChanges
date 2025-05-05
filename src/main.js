@@ -23,6 +23,10 @@ export function getHexagramQuery() {
 }
 
 export function copyHexagramUrl() {
+    if (secretShare) {
+        navigator.clipboard.writeText(getShareURL());
+        return;
+    }
     navigator.clipboard.writeText(`${document.location.origin}/${getHexagramQuery()}`);
 }
 
@@ -200,7 +204,15 @@ document.addEventListener('DOMContentLoaded', function () {
     processUrlParams();
 }, false);
 
-window.getShareURL = () => {
+export let secretShare = false;
+
+document.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "h") {
+        secretShare = true;
+    }
+});
+
+function getShareURL () {
     let url = appData.castNumbers.map(x => x.toString(16)).join("");
 
     if (beaconState.beaconTime !== 0) {

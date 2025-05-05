@@ -2,7 +2,7 @@ import { html } from "@arrow-js/core";
 import { disabledIf, displayNoneIf } from "../app/utility";
 import { appData, castInfo } from "../app/state";
 import { AppStates } from "../app/constants";
-import { copyHexagramUrl, expandEntryLines, reset } from "../main";
+import { copyHexagramUrl, expandEntryLines, reset, secretShare } from "../main";
 
 const finishedStates = [AppStates.FROM_BEACON_URL, AppStates.CAST_FINISH, AppStates.CAST_VERIFY, AppStates.CAST_FINISH_BEACON];
 const unknownText = "「 ? 」";
@@ -27,4 +27,5 @@ export const castTop = html`
     Hexagram <span id="future-num">${() => castInfo.futureHexagramNumber ?? unknownText}</span>
 </p>
 <button disabled="${() => !isFinished() && appData.appState !== AppStates.CASTING_RNG}" @click="${reset}" autocomplete="false" id="reset">Reset</button>
-<button disabled="${() => !isFinished()}" @click="${copyHexagramUrl}"autocomplete="false" id="copy-url">Copy URL</button>`;
+<button disabled="${() => !isFinished()}" @click="${copyHexagramUrl}"autocomplete="false" id="copy-url"
+style="${secretShare ? "color:red" : ""}">Copy URL</button>`;
