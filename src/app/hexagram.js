@@ -184,6 +184,7 @@ export default class Hexagram {
 
         this.lines[lineIndex] = type;
         this.linesSvg[lineIndex] = this.drawLine(lineIndex, type, animationTime, timeline);
+        return this.linesSvg[lineIndex];
     }
 
     addLine(type, animationTime = 0, timeline = undefined) {

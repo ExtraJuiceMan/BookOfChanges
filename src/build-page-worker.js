@@ -8,6 +8,5 @@ addEventListener("message", e => {
     const index = buildBookIndex(BookOfChanges, (entry) => {
         postMessage({ type: "index", entry });
     });
-
     //postMessage({entries, index});
 });

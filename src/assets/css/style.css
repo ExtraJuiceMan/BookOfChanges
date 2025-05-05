@@ -250,12 +250,15 @@ tr:nth-child(even) {
 
 .iching-heading-char {
     border: 0.38rem solid var(--text);
+    min-width: 12.4rem;
+    min-height: 18rem;
+    text-align: center;
 }
 
 .iching-heading-char-text {
     margin: 0;
     font-size: 11rem;
-    line-height: 1.6em;
+    line-height: 18rem;
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     font-family: 'Times New Roman', Times, serif;
@@ -389,4 +392,20 @@ tr:nth-child(even) {
         justify-content: center;
         align-items: center;
     }
+}
+
+.lookup-heading {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.hexagram-lookup {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 1rem;
 }

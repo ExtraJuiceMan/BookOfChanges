@@ -4,7 +4,7 @@ import "./assets/css/style.css";
 
 import Hexagram from "./app/hexagram";
 import { castedNumbersToBitString, castHexagramNumber, getRandomInt } from "./app/utility";
-import { YinYang, YinYangInvert, KING_WEN_SEQ, AppStates } from "./app/constants";
+import { YinYang, YinYangInvert, KING_WEN_SEQ, AppStates, ICHING_COMPACT } from "./app/constants";
 import { runBuildPageWorker } from "./app/build-page";
 import { castTop } from "./components/cast-top";
 import { castBottom } from "./components/cast-bottom";
@@ -13,6 +13,8 @@ import { castBits } from "./components/cast-bits";
 import { castLog } from "./components/cast-log";
 import { appData, beaconState, resetAppData, resetBeaconState, resetCastInfo, setCastInfo, castState, getSecretShare, setSecretShare } from "./app/state";
 import { stopBeaconBitsChoice, stopBeaconCountdown } from "./components/cast-beacon";
+import { create, SVG } from "@svgdotjs/svg.js";
+import { lookup, lookupInfo } from "./components/lookup";
 
 export function getHexagramQuery() {
     let url = `?code=${castedNumbersToBitString(appData.castNumbers)}`;
@@ -163,6 +165,7 @@ function mountComponents() {
     castBeacon(document.getElementById("cast-beacon-mount"));
     castBits(document.getElementById("cast-bits-mount"));
     castLog(document.getElementById("cast-log-mount"));
+    lookup(document.getElementById("lookup-mount"));
 }
 
 function processUrlParams() {
@@ -191,7 +194,33 @@ function processUrlParams() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+let lookupHexagram = null;
+
+function onLineClicked(hexagram, index) {
+    const node = hexagram.setLine(index, YinYangInvert[hexagram.lines[index]], 120);
+    setTimeout(() => {
+        node.click(() => onLineClicked(hexagram, index));
+        for (let value of Object.values(ICHING_COMPACT)) {
+            if (value.binary === hexagram.getBinaryCode()) {
+                lookupInfo.hexagram = value;
+                break;
+            }
+        }
+    }, 240);
+}
+
+
+function createLookupHexagram(svgNode) {
+    lookupHexagram = new Hexagram(SVG(svgNode).size(240, 240).viewbox(0, 0, 240, 240), "111111", 0);
+    for (let i = 0; i < lookupHexagram.linesSvg.length; i++) {
+        const line = lookupHexagram.linesSvg[i];
+        line.click(() => onLineClicked(lookupHexagram, i));
+        console.log(line);
+
+    } 
+}
+
+document.addEventListener("DOMContentLoaded", function () {
     runBuildPageWorker();
     mountComponents();
 
@@ -203,13 +232,19 @@ document.addEventListener('DOMContentLoaded', function () {
     createHeaderHexagrams();
     processUrlParams();
 
-    document.addEventListener("keypress", function onEvent(event) {
+    createLookupHexagram(document.getElementById("lookup-hexagram-svg"));
+
+    registerSecretKey();
+}, false);
+
+function registerSecretKey() {
+    document.addEventListener("keypress", function (event) {
         if (event.key === "h") {
             console.log("Enabled secret URL share");
             setSecretShare(true);
         }
     });
-}, false);
+}
 
 function getShareURL () {
     let url = appData.castNumbers.map(x => x.toString(16)).join("");

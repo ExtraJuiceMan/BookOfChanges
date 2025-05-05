@@ -1,7 +1,7 @@
 import Hexagram from "./hexagram";
 import { SVG } from "@svgdotjs/svg.js";
 import { TemplateBookEntry, TemplateIndexEntry } from "../components/iching-template";
-import { toTitleCase } from "./utility";
+import { scrollToId, toTitleCase } from "./utility";
 
 export function runBuildPageWorker() {
     const worker = new Worker(new URL("../build-page-worker.js", import.meta.url), {

@@ -1,5 +1,5 @@
 import { reactive } from "@arrow-js/core";
-import { AppStates } from "./constants";
+import { AppStates, ICHING_COMPACT } from "./constants";
 import { CastState } from "./cast-state";
 
 let secretShare = reactive({value: false});
